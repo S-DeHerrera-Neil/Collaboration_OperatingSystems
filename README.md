@@ -17,5 +17,5 @@
 - [cybbh_handbook](https://os.cybbh.io/public/os/latest/index.html)
 - [cybbh_setup_guide](https://cctc.cybbh.io/students/students/latest/Day_0_Setup.html)
 - [VTA_Range](https://vta.cybbh.space/)
-- [CTF](http://10.50.22.197:8000/teams)
+- [CTF (need to be in local network or use VPN)](http://10.50.22.197:8000/teams)
 
