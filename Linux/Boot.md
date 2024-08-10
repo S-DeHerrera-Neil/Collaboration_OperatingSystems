@@ -17,9 +17,29 @@
 ## dd (Data Duplicator)
 A command to copy binary data
 
-`dd if=<infile> of=<outfile> ibs=1 [skip=<skip-bytes>] [count=<length>]`
+### Syntax
+```
+dd if=<infile> of=<outfile> ibs=1 [skip=<skip-bytes>] [count=<length>]
+```
+- `if=` specifies the input file (a drive can be specified)
+- `of=` specifies the output file (a drive can be specified)
+- `ibs=` specifies the bytes to count by (for skip and count), it is recommended to set this as `1`
+- `skip=` skips bytes when reading based on: (skip * ibs) = bytes to skip 
+- `count` the number of bytes to read after skipping based on: (count * ibs) = bytes and then writes said bytes to the outfile
 
-- `xxd` gives a hexdump of the drive, I.E: `sudo xxd -l 512 -g 1 /dev/vda` gets a hexdump of the first 512 Bytes of /dev/vda 
+### Examples
+
+```
+dd if=/dev/sda of=outfile ibs=1 skip=512 count=16
+```
+This command reads the binary file `/dev/sda` it skips the first 512 bytes or goes to offset 0x200 and grabs 16 bytes of data. The program then writes the 16 bytes to the file 'outfile'
+
+```
+dd if=testmbr of=hinaryfile ibs=16 skip=4 count=1
+```
+This command reads the binary file `testmbr` it skips the first 64 bytes (4 * 16) or goes to offset 0x40 and grabs 16 bytes (1 * 16) of data. The program then writes the 16 bytes to the file 'binaryfile'
+
+- `xxd` gives a hexdump of the drive, I.E: `sudo xxd -l 512 -g 1 /dev/vda` gets a hexdump of the first 512 bytes of /dev/vda 
 - `dd` copy or write drive information
 
 ## Modules
@@ -30,7 +50,7 @@ A command to copy binary data
 
 
 
-Linux Boot Bits and Bytes 4
+Linux Boot Bits and bytes 4
 Execute : sudo cat /dev/vda | xxd -l 32 -c 0x10 -g 1
 
 What are the values contained in hex positions 0x00000001 through 0x00000008?
