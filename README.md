@@ -1,1 +1,4 @@
-# here!
+# Add Glossary stuff here!
+
+## Linux
+  
