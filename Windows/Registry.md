@@ -13,6 +13,12 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services
 ```
 Note: run `services.msc` to view running services and search for malicious services
 
+Make sure to check the startup programs: 
+```
+%AppData%\Microsoft\Windows\Start Menu\Programs\StartUp
+%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup
+```
+
 ## Microsoft Edge URL History
 ```
 HKEY_CLASSES_ROOT\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage
