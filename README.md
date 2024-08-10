@@ -3,6 +3,7 @@
 ## File Search (File)
 ## Registry (File)
 ## Boot (File)
+[Windows_Boot](Windows/Boot.md)
 ## Processes/Services (File)
 ## Logging/Security (File)
 # Directory 2 Linux (File)
@@ -16,4 +17,4 @@
 
 # Additional Resources
 
-  [Linux Boot](Linux/Boot.md)
+  [Linux_Boot](Linux/Boot.md)
