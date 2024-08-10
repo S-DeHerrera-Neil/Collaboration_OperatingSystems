@@ -1,18 +1,23 @@
 # Aditional Resources for Windows
+-File Search
 
-File Search
-Registry
-Boot
-Processes/Services
-Logging/Security
+-Registry
+
+-Boot
+
+-Processes/Services
+
+-Logging/Security
 
 # Aditional Resources for Linux
 
-File Search
-Boot
-Processes/Services
-Logging/Security
+-File Search
 
-# ReadMe.md
+-Boot
 
-# Additional Resources
+-Processes/Services
+
+-Logging/Security
+
+
+
