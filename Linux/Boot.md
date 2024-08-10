@@ -10,16 +10,21 @@
 - `/boot/grub/grub.cfg` display all linux kernels avaliable to load
 
 
-## Boot and Drive Editing
+# Viewing and Copying Drives
 
 - `lsblk` list blocks
+
+## dd (Data Duplicator)
+A command to copy binary data
+
+`dd if=<infile> of=<outfile> ibs=1 [skip=<skip-bytes>] [count=<length>]`
+
 - `xxd` gives a hexdump of the drive, I.E: `sudo xxd -l 512 -g 1 /dev/vda` gets a hexdump of the first 512 Bytes of /dev/vda 
 - `dd` copy or write drive information
 
 ## Modules
 - `ltrace -S lsmod` get all imported modules
 
-### test
 
 
 
