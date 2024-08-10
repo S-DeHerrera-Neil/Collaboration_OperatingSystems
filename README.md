@@ -1,4 +1,4 @@
-# VM Range
+# VM Range (VPN or local network access required)
 ![alt text](https://git.cybbh.space/os/public/-/raw/master/images/Range_Diagram3.PNG)
 
 ## Windows 
