@@ -9,3 +9,6 @@
   - [Boot](Linux/Boot.md)
   - [Processes/Services](Linux/Processes_and_Services.md)
   - [Logging/Security](Linux/Logging_and_Security.md)
+
+[cybbh_handbook](https://os.cybbh.io/public/os/latest/index.html)
+[cybbh_setup_guide](https://cctc.cybbh.io/students/students/latest/Day_0_Setup.html)
