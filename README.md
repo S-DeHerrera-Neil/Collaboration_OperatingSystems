@@ -10,7 +10,7 @@
 ## Logging/Security (File)
 [Windows_Logging/Security](Windows/Logging_and_Security.md)
 
-  # Directory 2 Linux (File)
+  # Directory 2 Linux
 ## File Search (File)
 []()
 ## Boot (File)
