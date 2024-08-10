@@ -1,5 +1,4 @@
-# Directory 1 Windows
-
+  # Directory 1 Windows 
 ## File Search (File)
 [Windows_File_Search](Windows/File_Search.md)
 ## Registry (File)
@@ -9,8 +8,8 @@
 ## Processes/Services (File)
 ## Logging/Security (File)
 [Windows_Logging/Security](Windows/Logging_and_Security.md)
-# Directory 2 Linux (File)
 
+  # Directory 2 Linux (File)
 ## File Search (File)
 ## Boot (File)
 ## Processes/Services (File)
