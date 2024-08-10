@@ -12,12 +12,13 @@
 
   # Directory 2 Linux (File)
 ## File Search (File)
+[]()
 ## Boot (File)
+[]()
 ## Processes/Services (File)
+[]()
 ## Logging/Security (File)
-
+[]()
 # ReadMe.md
 
-# Additional Resources
-
-  [Linux_Boot](Linux/Boot.md)
+# Additional_Resources.md
