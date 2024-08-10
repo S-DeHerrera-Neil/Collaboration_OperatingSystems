@@ -2,6 +2,7 @@
 
 ## File Search (File)
 ## Registry (File)
+[Windows_Registry](Windows/Registry.md)
 ## Boot (File)
 [Windows_Boot](Windows/Boot.md)
 ## Processes/Services (File)
