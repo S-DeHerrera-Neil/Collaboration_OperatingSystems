@@ -18,7 +18,7 @@
 ## Processes/Services (File)
 [Linux_Processes/Services](Linux/Processes_and_Services.md)
 ## Logging/Security (File)
-[Linux_Logging/Security]()
+[Linux_Logging/Security](Linux/Logging_and_Security.md)
 # ReadMe.md
 
 # Additional_Resources.md
