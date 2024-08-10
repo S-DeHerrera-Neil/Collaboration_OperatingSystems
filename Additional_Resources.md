@@ -1,16 +1,17 @@
-# Directory 1 Windows
+# Aditional Resources for Windows
 
-## File Search (File)
-## Registry (File)
-## Boot (File)
-## Processes/Services (File)
-## Logging/Security (File)
-# Directory 2 Linux (File)
+File Search
+Registry
+Boot
+Processes/Services
+Logging/Security
 
-## File Search (File)
-## Boot (File)
-## Processes/Services (File)
-## Logging/Security (File)
+# Aditional Resources for Linux
+
+File Search
+Boot
+Processes/Services
+Logging/Security
 
 # ReadMe.md
 
