@@ -8,7 +8,7 @@
 ## Registry
 	   - persistence
 	   - user specific information (SIDs, running processes, etc)
-### Boot
+### *Boot*
     - bcdedit
     - getting out of safe boot	
  # Processes / Services
@@ -22,12 +22,12 @@
     - contents search
     - filename search
     - attribute search   
-### Boot
+### *Boot*
 	   - persistence
 	   - user specific information (SIDs, running processes, etc)
 		 - using dd, xxd, hexdump, etc to manipulate binary files
 		 - navigate init
-### Logging / Security
+### *Logging / Security*
 		- sudo logging ( where failed sudo commands go)
     - rsyslog, where logs go
 	Processes / Services
