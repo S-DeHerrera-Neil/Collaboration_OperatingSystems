@@ -14,7 +14,7 @@
 ## File Search (File)
 []()
 ## Boot (File)
-[]()
+[Linux_Boot](Linux/Boot.md)
 ## Processes/Services (File)
 []()
 ## Logging/Security (File)
