@@ -17,4 +17,4 @@
 - [CTF](http://10.50.22.197:8000/teams)
 
 # VM Range
-![alt text]([https://git.cybbh.space/os/public/-/raw/master/os/modules/006_windows_boot_process/pages/winboot1.png](https://git.cybbh.space/os/public/-/raw/master/images/Range_Diagram3.PNG))
+![alt text](https://git.cybbh.space/os/public/-/raw/master/images/Range_Diagram3.PNG)
