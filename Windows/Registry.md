@@ -14,8 +14,14 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services
 Note: run `services.msc` to view running services and search for malicious services
 
 Make sure to check the startup programs: 
-- User Startup: `%AppData%\Microsoft\Windows\Start Menu\Programs\StartUp`
-- Shared Startup: `ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup`
+- User Startup:
+```
+%AppData%\Microsoft\Windows\Start Menu\Programs\StartUp
+```
+Shared Startup: 
+```
+ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup
+```
 
 ## Microsoft Edge URL History
 ```
