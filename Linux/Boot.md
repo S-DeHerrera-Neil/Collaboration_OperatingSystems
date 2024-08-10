@@ -23,7 +23,7 @@ dd if=<infile> of=<outfile> ibs=1 [skip=<skip-bytes>] [count=<length>]
 ```
 - `if=` specifies the input file (a drive can be specified)
 - `of=` specifies the output file (a drive can be specified)
-- `ibs=` specifies the bytes to count by (for skip and count), it is recommended to set this as `1`
+- `ibs=` specifies the bytes to count by (for skip and count), it is recommended to set this as 1
 - `skip=` skips bytes when reading based on: (skip * ibs) = bytes to skip 
 - `count` the number of bytes to read after skipping based on: (count * ibs) = bytes and then writes said bytes to the outfile
 
