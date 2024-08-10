@@ -1,6 +1,7 @@
 # Directory 1 Windows
 
 ## File Search (File)
+[Windows_File_Search](Windows/File_Search.md)
 ## Registry (File)
 [Windows_Registry](Windows/Registry.md)
 ## Boot (File)
