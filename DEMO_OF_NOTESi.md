@@ -1,5 +1,6 @@
 # Origional version of book notes. 
-
+> Let me know what you guys think about book translation/compressions. Useful or no?
+> the - are all bullet points but I don't know how to format bullet points so I put them in as raw data formatted a similar way. If I remember correctly I simply asked Copilot to shorten and compress the notes. While I asked GPT to not only shorten the notes but to dumb it down and explain some things. Just wanted to see how far the samples will vary. 
 ```
 #Day 2
 1. Windows Registry Introduction
@@ -28,7 +29,7 @@ For example: Driver information is kept in the registry in Windows, but in /dev 
 
 System configurations in Windows are in HKEY_LOCAL_MACHINE, but in /etc (and a few other directories) in Linux.
 ```
-# Microsoft version 
+# Copilot 
 ```
 Windows Registry Introduction
 The Windows Registry is a central database in Windows that stores configuration information for users, applications, and hardware. Think of it as a huge Rolodex where everything in Windows has a card with its information, including locations, settings, options, and other values.
