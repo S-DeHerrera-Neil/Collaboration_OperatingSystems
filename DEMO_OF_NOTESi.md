@@ -2,9 +2,6 @@
 
 ```
 #Day 2
-
-##############################################################DAY 2##############################################################
-###############################WINDOWS REGISTRY###############################
 1. Windows Registry Introduction
 The The Windows Registry is a central hierarchical database used in Windows to store information that is necessary to configure the system for one or more users, applications, and hardware devices.
 
