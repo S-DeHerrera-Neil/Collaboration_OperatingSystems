@@ -1,13 +1,16 @@
-# Windows Process Validation'
+# Windows Process Searching
 
-## get-process (use get-ciminstance command whenever possible)
+## get-process and get-service (use get-ciminstance command whenever possible)
 
 `get-process` grabs a table of all processes (similar to `tasklisk`), get-process does NOT show Parent Process ID (PPID), instead use `get-ciminstance win32_process`
+
+similarly `get-service` grabs a table of all services (the syntax is very 
 
 ### Syntax
 
 ```
 get-process [-name "explorer,otherprocess,searchprocess"] [-Id "12345"]
+get-service [-name "explorer,otherprocess,searchprocess"]
 ```
 - `-name` this searches the processes for strings, to specify multiple search processes use a comma to delimit them
 - `-Id` searches for a specific process Id (note: it may be easier to sort get-process by process Id instead)
@@ -51,3 +54,11 @@ Grabs a table of all process IDs, Names, and Parent Process IDs (PPID) and then 
 get-ciminstance win32_process | where-object {$_.Name -match "myprocess"} | select *
 ```
 Grabs all information for a process with a specified name
+
+## Net Start
+
+`net-start` provides a list of all processes running at start up
+
+## 
+
+## tasklist (CMD command)
