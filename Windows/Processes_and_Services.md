@@ -1,4 +1,4 @@
-# Windows Process Searching
+# Windows Process and Service Searching
 
 ## get-process and get-service (use get-ciminstance command whenever possible)
 
