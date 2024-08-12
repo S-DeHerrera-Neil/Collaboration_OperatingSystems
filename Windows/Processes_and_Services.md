@@ -71,3 +71,21 @@ Grabs all information for a process or service with a specified name
 
 
 # Networking
+
+## netstat
+
+`netstat` is a CMD command that provides a status of all ports on the machine, the powershell equivalent is `Get-NetTCPConnection`
+
+### syntax
+
+`netstat`
+- `-a` shows all ports
+- `-p "TCP"` shows all TCP connections and listening ports (you can also search for UDP)
+
+## Get-NetTCPConnection
+
+`Get-NetTCPConnection` is a powershell command that provides a status of all ports on the machine
+
+### syntax
+
+`Get-NetTCPConnection`
