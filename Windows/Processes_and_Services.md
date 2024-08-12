@@ -20,7 +20,7 @@ get-service [-name "explorer,otherprocess,searchprocess"]
 ```
 get-process | sort-object -property Id
 ```
-This grabs all processes and sorts them by process Id
+This grabs all processes and sorts them by process ID
 
 ```
 (get-process -Id "12345").modules
@@ -30,9 +30,9 @@ This grabs all attached modules and DLLs to a process
 
 ```
 get-process -Name "myprocess" | select *
+get-service -Name "myprocess" | select *
 ```
-This grabs all available information about a specific process
-
+This grabs all available information about a specific process or service
 
 ## get-ciminstance win32_process
 
