@@ -1,4 +1,4 @@
-# Windows Process and Service Searching
+# Windows Process and Service Searching via Terminal
 
 ## get-process and get-service (use get-ciminstance command whenever possible)
 
@@ -65,6 +65,9 @@ get-ciminstance win32_service | where-object {$_.Name -match "myservice"} | sele
 Grabs all information for a process or service with a specified name
 
 ## Sysinternals tools
+
+# Process and Service searching via GUI
+`services.msc` a gui to view running services
 
 # Process Persistence
 
