@@ -64,11 +64,15 @@ get-ciminstance win32_service | where-object {$_.Name -match "myservice"} | sele
 ```
 Grabs all information for a process or service with a specified name
 
+# Process Persistence
+
 ## Net Start
 
 `net-start` provides a list of all processes running at start up
 
+## Get-ScheduledTask
 
+`Get-ScheduledTask` grabs all scheduled processes 
 
 # Networking
 
@@ -76,16 +80,21 @@ Grabs all information for a process or service with a specified name
 
 `netstat` is a CMD command that provides a status of all ports on the machine, the powershell equivalent is `Get-NetTCPConnection`
 
+Note: since this is a CMD command so it only returns an array of strings and not an object, any further filtering must done via regex
+
 ### syntax
 
-`netstat`
+`netstat -ano`
 - `-a` shows all ports
+- `-n` displays addresses in numerical form
+- `-o` displays the process responsible for each connection or listening port
 - `-p "TCP"` shows all TCP connections and listening ports (you can also search for UDP)
 
-## Get-NetTCPConnection
+## Get-NetTCPConnection or Get-NEt
 
 `Get-NetTCPConnection` is a powershell command that provides a status of all ports on the machine
 
-### syntax
+### Syntax
 
 `Get-NetTCPConnection`
+- `-State "Closed"` searches for all TCP connections with a state of closed, can also search for "Listen", "Established", etc
