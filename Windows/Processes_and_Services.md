@@ -64,6 +64,8 @@ get-ciminstance win32_service | where-object {$_.Name -match "myservice"} | sele
 ```
 Grabs all information for a process or service with a specified name
 
+## Sysinternals tools
+
 # Process Persistence
 
 ## Net Start
