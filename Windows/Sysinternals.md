@@ -7,7 +7,10 @@ PS C:\Users\student> z:
 ```
 This creates a seperate z drive that holds all sysinternals tools
 
-Note: move all sysinternals tools to `C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps` to be able to use them from anywhere
+Note: move all sysinternals tools to `C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps` to be able to use them from anywhere, I.E:
+```
+mv Z:\* C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps
+```
 
 ## Method 2: install via web gui
 - Download Sysinternals Suite via https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
