@@ -13,7 +13,7 @@ get-process [-name "explorer,otherprocess,searchprocess"] [-Id "12345"]
 get-service [-name "explorer,otherprocess,searchprocess"]
 ```
 - `-name` this searches the processes for strings, to specify multiple search processes use a comma to delimit them
-- `-Id` searches for a specific process Id (note: it may be easier to sort get-process by process Id instead)
+- `-Id` searches for a specific process Id (note: it may be easier to sort get-process by process Id instead) THIS DOES NOT WORK WITH get-service
 
 ### Examples
 
@@ -32,6 +32,7 @@ This grabs all attached modules and DLLs to a process
 get-process -Name "myprocess" | select *
 ```
 This grabs all available information about a specific process
+
 
 ## get-ciminstance win32_process
 
