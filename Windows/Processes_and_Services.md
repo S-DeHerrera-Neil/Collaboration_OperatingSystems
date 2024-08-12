@@ -90,7 +90,7 @@ Note: since this is a CMD command so it only returns an array of strings and not
 - `-o` displays the process responsible for each connection or listening port
 - `-p "TCP"` shows all TCP connections and listening ports (you can also search for UDP)
 
-## Get-NetTCPConnection or Get-NEt
+## Get-NetTCPConnection or Get-Net
 
 `Get-NetTCPConnection` is a powershell command that provides a status of all ports on the machine
 
