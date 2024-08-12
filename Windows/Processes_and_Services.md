@@ -43,9 +43,9 @@ get-ciminstance win32_process
 ### Examples
 
 ```
-get-ciminstance win32_process | select ProcessId,Name,ParentProcessID
+get-ciminstance win32_process | select ProcessID,Name,ParentProcessID | sort processID
 ```
-Grabs a table of all process IDs, Names, and Parent Process IDs (PPID)
+Grabs a table of all process IDs, Names, and Parent Process IDs (PPID) and then sorts by processID
 
 ```
 get-ciminstance win32_process | where-object {$_.Name -match "myprocess"} | select *
