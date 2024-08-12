@@ -4,7 +4,7 @@
 
 `get-process` grabs a table of all processes (similar to `tasklisk`), get-process does NOT show Parent Process ID (PPID), instead use `get-ciminstance win32_process`
 
-similarly `get-service` grabs a table of all services (the syntax is very 
+similarly `get-service` grabs a table of all services sorted by name
 
 ### Syntax
 
@@ -27,12 +27,16 @@ This grabs all processes and sorts them by process ID
 ```
 This grabs all attached modules and DLLs to a process
 
-
 ```
 get-process -Name "myprocess" | select *
-get-service -Name "myprocess" | select *
+get-service -Name "myservice" | select *
 ```
 This grabs all available information about a specific process or service
+
+```
+get-service | where-object {$_.Statues -cmatch "Running"}
+```
+This grabs all services that are running (Note: this is not relevant for processes as everthing provided by get-process and get-ciminstance is already running)
 
 ## get-ciminstance win32_process
 
