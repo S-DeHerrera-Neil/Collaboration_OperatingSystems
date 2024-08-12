@@ -1,8 +1,8 @@
-# Windows Process Validation
+# Windows Process Validation'
 
 ## get-process
 
-`get-process` grabs a table of all processes (similar to `tasklisk`)
+`get-process` grabs a table of all processes (similar to `tasklisk`), get-process does NOT show Parent Process ID (PPID), instead use `get-ciminstance win32_process`
 
 ### Syntax
 
@@ -29,3 +29,25 @@ This grabs all attached modules and DLLs to a process
 get-process -Name "myprocess" | select *
 ```
 This grabs all available information about a specific process
+
+## get-ciminstance win32_process
+
+`get-ciminstance win32_process` is similar to get-process with the benefit of being able to view Parent Process ID (PPID)
+
+### Syntax
+
+```
+get-ciminstance win32_process
+```
+
+### Examples
+
+```
+get-ciminstance win32_process | select ProcessId,Name,ParentProcessID
+```
+Grabs a table of all process IDs, Names, and Parent Process IDs (PPID)
+
+```
+get-ciminstance win32_process | where-object {$_.Name -match "myprocess"} | select *
+```
+Grabs all information for a process with a specified name
