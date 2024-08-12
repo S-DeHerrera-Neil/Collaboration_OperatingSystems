@@ -1,6 +1,6 @@
 # Windows Process Validation'
 
-## get-process
+## get-process (use get-ciminstance command whenever possible)
 
 `get-process` grabs a table of all processes (similar to `tasklisk`), get-process does NOT show Parent Process ID (PPID), instead use `get-ciminstance win32_process`
 
