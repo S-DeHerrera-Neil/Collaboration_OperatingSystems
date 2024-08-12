@@ -38,14 +38,17 @@ get-service | where-object {$_.Statues -cmatch "Running"}
 ```
 This grabs all services that are running (Note: this is not relevant for processes as everthing provided by get-process and get-ciminstance is already running)
 
-## get-ciminstance win32_process
+## get-ciminstance win32_process or get-ciminstance win32_service
 
 `get-ciminstance win32_process` is similar to get-process with the benefit of being able to view Parent Process ID (PPID)
+
+`get-ciminstance win32_service` is similar to the win32_process variant
 
 ### Syntax
 
 ```
 get-ciminstance win32_process
+get-ciminstance win32_service
 ```
 
 ### Examples
@@ -57,13 +60,14 @@ Grabs a table of all process IDs, Names, and Parent Process IDs (PPID) and then 
 
 ```
 get-ciminstance win32_process | where-object {$_.Name -match "myprocess"} | select *
+get-ciminstance win32_service | where-object {$_.Name -match "myservice"} | select *
 ```
-Grabs all information for a process with a specified name
+Grabs all information for a process or service with a specified name
 
 ## Net Start
 
 `net-start` provides a list of all processes running at start up
 
-## 
 
-## tasklist (CMD command)
+
+# Networking
