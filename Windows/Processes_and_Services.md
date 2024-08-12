@@ -2,7 +2,7 @@
 
 ## get-process and get-service (use get-ciminstance command whenever possible)
 
-`get-process` grabs a table of all processes (similar to `tasklisk`), get-process does NOT show Parent Process ID (PPID), instead use `get-ciminstance win32_process`
+`get-process` grabs a table of all processes (similar to `tasklist`), get-process does NOT show Parent Process ID (PPID), instead use `get-ciminstance win32_process`
 
 similarly `get-service` grabs a table of all services sorted by name
 
