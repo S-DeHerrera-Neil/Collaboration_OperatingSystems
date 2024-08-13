@@ -5,7 +5,7 @@ find / -name "*filename*" 2>/dev/null
 
 ## Find hidden Files
 ```
-find / 2>/dev/null | grep "/\."
+find / -type f 2>/dev/null | grep "/\."
 ```
 
 ## Find a file by contents
