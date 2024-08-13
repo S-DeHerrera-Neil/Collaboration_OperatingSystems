@@ -19,4 +19,4 @@ mv Z:\* C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps
 
 ## Method 3: install via powershell
 
-look it up
+use Invoke-WebRequest to download (need to clarify syntax)
