@@ -1,6 +1,6 @@
 # Downloading Sysinternals
 
-## Method 1: install via CMD
+## Method 1: Link Drive (CMD or Powershell)
 ```
 PS C:\Users\student> net use * http://live.sysinternals.com
 PS C:\Users\student> z:
@@ -12,10 +12,10 @@ Note: move all sysinternals tools to `C:\Users\<yourusername>\AppData\Local\Micr
 mv Z:\* C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps
 ```
 
-## Method 2: install via web gui
+## Method 2: Install via web gui
 - Download Sysinternals Suite via https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 - copy zip file to `C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps`
-- unzip all files
+- unzip all files (powershell command: `expand-archive -path <infile> -destinationpath <outfile>`)
 
 ## Method 3: install via powershell
 
