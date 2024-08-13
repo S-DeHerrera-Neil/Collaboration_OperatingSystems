@@ -11,7 +11,7 @@ There are three major steps:
 
  - BIOS (supports up to 2 Terabytes)
    - MBR (Master Boot Record): contains Disk Partitions
-        - The MBR is 512 bytes, separated into 6 parts:
+        ### The MBR is 512 bytes, separated into 6 parts:
          - Bootstrap Code (446 bytes)
          - Partition entry 1 (16 bytes)
          - Partition entry 2 (16 bytes)
