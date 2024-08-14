@@ -91,3 +91,14 @@ more review needed
 ### Method 1: EventViewer GUI
 
 ### Method 2: Powershell
+
+
+
+### Method 3: CMD
+log viewer:
+```
+wevutil
+```
+
+#### audity policy
+more research needed
