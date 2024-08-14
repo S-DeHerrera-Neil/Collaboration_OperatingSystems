@@ -2,7 +2,7 @@
 ### Commands to know
 - cmd: `reg query "<key>"`
 - powershell: `Get-ItemProperty "<key>"`
-- sysinternals: `findstr <searchfile> --accepteula` CONFIRM THIS SYNTAX
+- sysinternals: `strings <searchfile> -accepteula`
 
 ## User Assist
 Used for file and shortcut access history
