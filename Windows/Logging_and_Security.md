@@ -72,6 +72,13 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 HKEY_USERS\<SID>\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 ```
 
+GET ALL RECENT FILES:
+```
+Get-Item "REGISTRY::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" | select -Expand property | ForEach-Object {
+    [System.Text.Encoding]::Default.GetString((Get-ItemProperty -Path "REGISTRY::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" -Name $_).$_)
+}
+```
+
 ## Browser Artifacts
 
 Chrome (URL history, current session/tabs, top sites):
