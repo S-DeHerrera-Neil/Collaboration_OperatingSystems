@@ -3,7 +3,8 @@
 - cmd: `reg query "<key>"`
 - powershell: `Get-ItemProperty "<key>"`
 
-### User Assist - file and shortcut access history
+### User Assist
+file and shortcut access history
 ```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count\
 HKEY_USERS\<SID>\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count\
