@@ -18,7 +18,6 @@ Note: All UserAssist registry data is encoded with [ROT13](https://rot13.com/) (
 
 ## Windows Background Activity Moderator (BAM)
 Windows service that controls activity of background apps (only windows 10 version 1709 and after)
-
 This registry holds the path to the executable
 
 Version 1809* (Windows Build 10.0.17763) and newer:
@@ -32,6 +31,12 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\UserSettings
 ```
 
 *Note: you can get windows version by running `systeminfo` (cmd) or `get-computerinfo | select osname, osversion` (powershell)
+
+```
+Get-Item "REGISTRY::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings" | select -Expand property | ForEach-Object {
+    [System.Text.Encoding]::Default.GetString((Get-ItemProperty -Path "REGISTRY::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" -Name $_).$_)
+}
+```
 
 ## Recycle Bin
 
