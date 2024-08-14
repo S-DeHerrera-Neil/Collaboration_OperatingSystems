@@ -1,5 +1,5 @@
 # Log locations
-## Commands to know
+### Commands to know
 - cmd: `reg query "<key>"`
 - powershell: `Get-ItemProperty "<key>"`
 - sysinternals: `findstr <searchfile> --accepteula` CONFIRM THIS SYNTAX
