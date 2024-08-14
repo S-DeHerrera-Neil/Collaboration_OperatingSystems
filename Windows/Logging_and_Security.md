@@ -113,4 +113,14 @@ more research needed
 ### Common Event Codes
 
 | Name | ID | Level | EventLog |
-| ---- | -- | ----- | -------- |
+| Account Lockouts | -- | ----- | -------- |
+| User Added to Privileged Group | -- | ----- | -------- |
+| Security-Enabled group Modification | -- | ----- | -------- |
+| Successful User Account Login | -- | ----- | -------- |
+| Failed User Account Login | -- | ----- | -------- |
+| Account Login with Explicit Credentials | -- | ----- | -------- |
+| Event Log was Cleared | -- | ----- | -------- |
+| Audit Log was Cleared | -- | ----- | -------- |
+| System audit policy was changed | -- | ----- | -------- |
+| PS Module Logging (Command Execution) | -- | ----- | -------- |
+| PS Script-Block Logging (Script Execution) | -- | ----- | -------- |
