@@ -14,3 +14,16 @@ CEBFF5CD-ACE2-4F4F-9178-9926F41749EA # GUID to search for accessed applications 
 F4E57C4B-2036-45F0-A9AB-443BCFE33D9F # GUID to search for shortcuts used to start programs
 ```
 Note: All UserAssist registry data is encoded with [ROT13](https://rot13.com/) (link to decode)
+
+### Windows Background Activity Moderator (BAM)
+Windows service that controls activity of background apps (only windows 10 version 1709 and after)
+
+Version 1809 and newer:
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings
+```
+
+Version 1803 and below:
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\UserSettings
+```
