@@ -28,4 +28,4 @@ Version 1803* (Windows Build 10.0.17134) and below:
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\UserSettings
 ```
 
-*Note: you can get windows version by running `systeminfo` (cmd) or `get-computerinfo | select osname, osversion` (powershell
+*Note: you can get windows version by running `systeminfo` (cmd) or `get-computerinfo | select osname, osversion` (powershell)
