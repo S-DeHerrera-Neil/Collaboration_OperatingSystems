@@ -1,4 +1,7 @@
 # Log locations
+### Registry commands
+- cmd: `reg query "<key>"`
+- powershell: `Get-ItemProperty "<key>"`
 
 ### User Assist
 ```
