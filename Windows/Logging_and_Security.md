@@ -91,8 +91,11 @@ more review needed
 ### Method 1: EventViewer GUI
 
 ### Method 2: Powershell
-
-
+log viewer:
+```
+Get-Eventlog
+Get-WinEvent
+```
 
 ### Method 3: CMD
 log viewer:
