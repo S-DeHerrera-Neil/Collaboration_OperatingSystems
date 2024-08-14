@@ -43,3 +43,22 @@ Contains folder's for each SID
 Format:
 - `$RXXXXXX` - content of deleted file
 - `$IXXXXXX` - original path and name
+
+## Prefetch
+Files created when a program is first run and persist between restarts (limit of 1024 files on Win10 and 128 on Win7)
+
+Prefetch stores the last 8 execution times
+```
+C:\Windows\Prefetch
+```
+
+## Jump Lists
+Stores:
+- First execution time
+- Creation Time
+- Last Execution
+- Modification time
+
+```
+C:\Users\<SID>\AppData\Roaming\Microsoft\Windows\Recent
+```
