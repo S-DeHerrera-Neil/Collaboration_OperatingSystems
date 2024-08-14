@@ -88,6 +88,11 @@ more review needed
 
 ## Viewing Windows Events
 
+Registry
+```
+HKEY_LOCAL_MACHINE\SECURITY\Policy\PolAdtEv
+```
+
 ### Method 1: EventViewer GUI
 run `eventvwr` in cmd to open the application
 
@@ -104,7 +109,7 @@ log viewer:
 wevutil
 ```
 
-Audity policy:
+Audity policy viewing and editing:
 ```
 auditpol
 ```
