@@ -80,3 +80,4 @@ C:\Users\<USER>\AppData\Local\Google\Chrome\User Data\Default\history
 ```
 
 ## Auditing
+
