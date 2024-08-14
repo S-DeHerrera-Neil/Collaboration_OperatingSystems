@@ -114,24 +114,14 @@ more research needed
 
 | Name | ID | Level | EventLog |
 | ---- | -- | ----- | -------- |
-| Account Lockouts | -- | ----- | -------- |
-| User Added to Privileged Group | -- | ----- | -------- |
-| Security-Enabled group Modification | -- | ----- | -------- |
-| Successful User Account Login | -- | ----- | -------- |
-| Failed User Account Login | -- | ----- | -------- |
-| Account Login with Explicit Credentials | -- | ----- | -------- |
-| Event Log was Cleared | -- | ----- | -------- |
-| Audit Log was Cleared | -- | ----- | -------- |
-| System audit policy was changed | -- | ----- | -------- |
-| PS Module Logging (Command Execution) | -- | ----- | -------- |
-| PS Script-Block Logging (Script Execution) | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
-| ---- | -- | ----- | -------- |
+| Account Lockouts | 4740 | Informational | Security |
+| User Added to Privileged Group | 4728, 4732, 4756 | Informational | Security |
+| Security-Enabled group Modification | 4735 | Informational | Security |
+| Successful User Account Login | 4624 | Informational | Security |
+| Failed User Account Login | 4625 | Informational | Security |
+| Account Login with Explicit Credentials | 4648 | Informational | Security |
+| Event Log was Cleared | 104 | ----- | -------- |
+| Audit Log was Cleared | 1102 | ----- | Security |
+| System audit policy was changed | 4719 | ----- | -------- |
+| PS Module Logging (Command Execution) | 4103 | ----- | -------- |
+| PS Script-Block Logging (Script Execution) | 4104,4105,4106 | ----- | -------- |
