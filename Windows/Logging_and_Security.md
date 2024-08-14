@@ -81,3 +81,13 @@ C:\Users\<USER>\AppData\Local\Google\Chrome\User Data\Default\history
 
 ## Auditing
 
+```
+Rt click <file> on the desktop > Properties > Security > Advanced > Auditing > Continue > Add > Select a Principle > Type <username> (andy.dwyer) > Check Names > Ok >  Full Control > Ok > Apply > Ok
+```
+more review needed
+
+## Viewing Windows Events
+
+### Method 1: EventViewer GUI
+
+### Method 2: Powershell
