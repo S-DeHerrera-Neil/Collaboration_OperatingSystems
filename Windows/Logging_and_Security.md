@@ -1,9 +1,9 @@
 # Log locations
-### Registry commands
+## Registry commands
 - cmd: `reg query "<key>"`
 - powershell: `Get-ItemProperty "<key>"`
 
-### User Assist
+## User Assist
 Used for file and shortcut access history
 ```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count\
@@ -15,7 +15,7 @@ F4E57C4B-2036-45F0-A9AB-443BCFE33D9F # GUID to search for shortcuts used to star
 ```
 Note: All UserAssist registry data is encoded with [ROT13](https://rot13.com/) (link to decode)
 
-### Windows Background Activity Moderator (BAM)
+## Windows Background Activity Moderator (BAM)
 Windows service that controls activity of background apps (only windows 10 version 1709 and after)
 
 Version 1809* (Windows Build 10.0.17763) and newer:
