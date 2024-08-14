@@ -5,7 +5,9 @@
 
 ### User Assist
 ```
-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{GUID}\Count\
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count\
+or
+HKEY_USERS\<SID>\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count\
 ```
 ```
 CEBFF5CD-ACE2-4F4F-9178-9926F41749EA # GUID to search for accessed applications and files
