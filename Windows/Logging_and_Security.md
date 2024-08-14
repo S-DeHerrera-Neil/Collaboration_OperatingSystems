@@ -89,6 +89,7 @@ more review needed
 ## Viewing Windows Events
 
 ### Method 1: EventViewer GUI
+run `eventvwr` in cmd to open the application
 
 ### Method 2: Powershell
 log viewer:
