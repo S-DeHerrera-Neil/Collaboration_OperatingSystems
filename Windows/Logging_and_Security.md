@@ -1,7 +1,8 @@
 # Log locations
-## Registry commands
+## Commands to know
 - cmd: `reg query "<key>"`
 - powershell: `Get-ItemProperty "<key>"`
+- sysinternals: `findstr <searchfile> --accepteula` CONFIRM THIS SYNTAX
 
 ## User Assist
 Used for file and shortcut access history
@@ -62,3 +63,20 @@ Stores:
 ```
 C:\Users\<SID>\AppData\Roaming\Microsoft\Windows\Recent
 ```
+## Recent Files
+tracks the last 150 files and folders opened
+
+holds path, entry, and modification time
+```
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+HKEY_USERS\<SID>\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+```
+
+## Browser Artifacts
+
+Chrome (URL history, current session/tabs, top sites):
+```
+C:\Users\<USER>\AppData\Local\Google\Chrome\User Data\Default\history
+```
+
+## Auditing
