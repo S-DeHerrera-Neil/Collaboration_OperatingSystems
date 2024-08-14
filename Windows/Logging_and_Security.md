@@ -112,8 +112,11 @@ more research needed
 
 ### Common Event Codes
 
-| Name | ID | Level | EventLog |
+|         Name     | ID | Level | EventLog |
 | Account Lockouts | -- | ----- | -------- |
+
+
+
 | User Added to Privileged Group | -- | ----- | -------- |
 | Security-Enabled group Modification | -- | ----- | -------- |
 | Successful User Account Login | -- | ----- | -------- |
