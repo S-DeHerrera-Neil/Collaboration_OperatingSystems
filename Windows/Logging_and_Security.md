@@ -18,7 +18,7 @@ Note: All UserAssist registry data is encoded with [ROT13](https://rot13.com/) (
 ## Windows Background Activity Moderator (BAM)
 Windows service that controls activity of background apps (only windows 10 version 1709 and after)
 
-This returns the path of an executable and it's last execution time
+This registry holds the path to the executable
 
 Version 1809* (Windows Build 10.0.17763) and newer:
 ```
