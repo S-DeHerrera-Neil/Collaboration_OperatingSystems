@@ -32,4 +32,14 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\UserSettings
 
 *Note: you can get windows version by running `systeminfo` (cmd) or `get-computerinfo | select osname, osversion` (powershell)
 
-\## Recycle Bin
+## Recycle Bin
+
+```
+C:\$Recycle.bin
+```
+
+Contains folder's for each SID
+
+Format:
+- `$RXXXXXX` - content of deleted file
+- `$IXXXXXX` - original path and name
