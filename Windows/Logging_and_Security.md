@@ -109,3 +109,8 @@ Audity policy:
 auditpol
 ```
 more research needed
+
+### Common Event Codes
+
+| Name | ID | Level | EventLog |
+| ---------------------------- |
