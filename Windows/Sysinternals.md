@@ -16,6 +16,9 @@
 
 ## Alternative Method (share drive)
 
-```
-net use * https://sys
-```
+- Step 1: Link sysinternals tool to drive
+  - `net use * http://live.sysinternals.com` (cmd or powershell)
+- Step 2: change directory to Z drive to access and run programs
+  - `cd Z:\`
+
+Note: this will not work if you are not in the Z drive or if the machine does not have access to the internet.
