@@ -24,13 +24,14 @@ There are three major steps:
    - UEFI Boot Manager: Unlike the BIOS (that reads the MBR), the UEFI reads an EFI Partition.
         - The EFI Partition contains UEFI Boot Managers [Windows bootmgfw.efi or Windows Boot Manager]
 
-# How to tell if your machine is running BIOS or UEFI
-
+# Command showing whether your machine is running BIOS or UEFI
    '''
 findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
 Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot environment"
 '''
-# bcedit
+# bcedit (BDCEdit.exe): a Command Line tool used to create new stores, modify existing stores, and add boot menu options.
+    - BCD (Boot Configuration Files) provides a store that's used to describe boot applications and boot application settings
+# Command 
 '''
 bcedit | findstr /i winload
 '''
