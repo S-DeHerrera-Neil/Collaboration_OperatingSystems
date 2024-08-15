@@ -2,6 +2,10 @@
 
 # Understanding syslog, rsyslog, and syslog-ng Codes
 
+# Syslog Formatting
+
+### Entry Formatting
+`facility. severity /path/to/log/location`
 
 ### Syslog Facilities Codes (Source of Events)
 | Code | Facility |
