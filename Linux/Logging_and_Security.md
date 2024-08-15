@@ -1,6 +1,8 @@
-# Logs and Where they are
-
-# Understanding syslog, rsyslog, and syslog-ng Codes
+# Who Creates log
+- `syslog`
+  - Default on all linux machines
+  - Defined in [RFC 5425](https://tools.ietf.org/html/rfc5424#page-9)
+- `journald`
 
 # Syslog Formatting
 
