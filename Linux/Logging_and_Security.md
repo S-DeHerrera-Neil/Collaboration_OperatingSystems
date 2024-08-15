@@ -8,7 +8,7 @@
 # Paths to Know
 | descriptor | Path | Notes |
 | ---------- | ---- | ----- | 
-| Syslog config files | `/etc/rsyslog/` | |
+| Syslog config files | `/etc/rsyslog.d/` | |
 | Default log location | `/var/log/` | most logs are in /var/log, all logs are in /var |
 | | | |
 | ----- | Authentication | ----- |
