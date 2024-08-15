@@ -74,3 +74,6 @@ Logs messages from any facility of severity Warning and higher (Warning, Error, 
 2.!2
 ```
 Logs messages from mail system of severity Error and lower (Error,Warning,Notice,Informational,Debug) to /var/log/test
+
+# Using XPATH (womp womp)
+- testing tool: xpather.com (similar to regex101)
