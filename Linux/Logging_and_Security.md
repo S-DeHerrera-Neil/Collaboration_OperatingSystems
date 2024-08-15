@@ -109,6 +109,15 @@ JQ is a linux command and tool to parse through .JSON files and grab the desired
 
 
 ```
-cat JSON_file | jq .
+cat conn.log | jq .
 ```
 prints a JSON file in "pretty" print
+
+```
+cat conn.log | jq '."id.orig_h"' | sort -u | wc -l
+```
+read a file, grab the "id.orig_h" element and grab the count of unique lines
+
+```
+
+```
