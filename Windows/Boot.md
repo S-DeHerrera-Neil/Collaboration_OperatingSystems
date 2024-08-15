@@ -1,5 +1,4 @@
-1. Boot Process Overview
-# Entire Boot Process
+# 1. Boot Process Overview
 ![Windows Boot Full](http://1.bp.blogspot.com/-MaRtDTHH1Vo/UysJF8KXNbI/AAAAAAAAALo/D6Kt2f8Gpmo/s1600/Walkthrough_Diagram.jpg)
 
 There are three major steps:
@@ -7,7 +6,7 @@ There are three major steps:
  - Loading the Boot Sector or Boot Manager
  - Loading the Operating System from the Boot Sector
 
-2. BIOS vs UEFI
+# 2. BIOS vs UEFI
 
  - BIOS (supports up to 2 Terabytes)
    - MBR (Master Boot Record): contains Disk Partitions
