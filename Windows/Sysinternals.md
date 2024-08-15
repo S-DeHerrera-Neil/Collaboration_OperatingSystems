@@ -1,22 +1,21 @@
 # Downloading Sysinternals
 
-## Method 1: Link Drive (CMD or Powershell)
-```
-PS C:\Users\student> net use * http://live.sysinternals.com
-PS C:\Users\student> z:
-```
-This creates a seperate z drive that holds all sysinternals tools
+## Recommended Method (download and unzip)
 
-Note: move all sysinternals tools to `C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps` to be able to use them from anywhere, I.E:
+- Step 1: downloading sysinternals.zip
+  - `Invoke-WebRequest "https://download.sysinternals.com/files/SysinternalsSuite.zip"` (Powershell)
+  - Or enter the url in a webbrowser and the file will be downloaded automatically
+- Step 1.5: Moving zipfile to another machine
+  - Moving the zipfile to another machine: `scp SysinternalsSuite.zip 10.X.X.X:/Users/<user>/AppData/Local/Microsoft/WindowsApps`
+  - Grabbing the zipfile from another machine: `scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/Local/Microsoft/WindowsApps`
+  - Upload via MobaXTerm (open a ssh session to the target machine and use the green up arrow to upload a file)
+- Step 2: File Placement
+  - Ideally the file should be placed in `C:\Users\<user>\AppData\Local\Microsoft\WindowsApps` (this means that the executables can be run from anywhere)
+- Step 2: unpacking zipfile
+  - `Expand-Archive SysinternalsSuite.zip .` (Powershell)
+
+## Alternative Method (share drive)
+
 ```
-mv Z:\* C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps
+
 ```
-
-## Method 2: Install via web gui
-- Download Sysinternals Suite via https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
-- copy zip file to `C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps`
-- unzip all files to current directory (powershell command: `expand-archive <zipfile> .`)
-
-## Method 3: install via powershell
-
-use Invoke-WebRequest to download (need to clarify syntax)
