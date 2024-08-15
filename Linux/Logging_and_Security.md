@@ -1,8 +1,16 @@
 # Who Creates log
-- `syslog`
+- `syslog` daemon
   - Default on all linux machines
   - Defined in [RFC 5425](https://tools.ietf.org/html/rfc5424)
-- `journald`
+- `journald` daemon
+  - Unique to certain distros
+
+# Paths to Know
+| descriptor | Path |
+| ---------- | ---- |
+| Syslog config files | /etc/rsyslog/ |
+| Default log location | /var/log/ |
+
 
 # Syslog Formatting
 
