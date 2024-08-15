@@ -6,10 +6,10 @@
   - Unique to certain distros
 
 # Paths to Know
-| descriptor | Path |
-| ---------- | ---- |
-| Syslog config files | /etc/rsyslog/ |
-| Default log location | /var/log/ |
+| descriptor | Path | Notes |
+| ---------- | ---- | ----- | 
+| Syslog config files | /etc/rsyslog/ | |
+| Default log location | /var/log/ | |
 
 
 # Syslog Formatting
