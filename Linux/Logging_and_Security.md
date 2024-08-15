@@ -27,13 +27,13 @@
 `facility`. `severity` `/path/to/log/location`
 
 ### Syslog Codes
-| Code | Facility | - | Code | Severity |
-| ---- | -------- | - | ---- | -------- |
-| 0 | kernel messages | - | 0 | Emergency |
-| 1 | user-level messages | - | 1 | Alert |
-| 2 | mail system | - | 2 | Critical |
-| 3 | system daemons | - | 3 | Error |
-| 4 | security/authorization messages | - | 4 | Warning |
-| 5 | messages made by syslogd | - | 5 | Notice |
-| 6 | line printer subsystem | - | 6 | Informational |
-| 7 | network news subsystem | - | 7 | Debug |
+| Code | Facility | Severity |
+| ---- | -------- | -------- |
+| 0 | kernel messages | Emergency |
+| 1 | user-level messages | Alert |
+| 2 | mail system | Critical |
+| 3 | system daemons | Error |
+| 4 | security/authorization messages | Warning |
+| 5 | messages made by syslogd | Notice |
+| 6 | line printer subsystem | Informational |
+| 7 | network news subsystem | Debug |
