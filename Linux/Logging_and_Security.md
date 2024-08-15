@@ -11,6 +11,11 @@
 | Syslog config files | `/etc/rsyslog/` | |
 | Default log location | `/var/log/` | most logs are in /var/log, all logs are in /var |
 | ----- | Authentication | ----- |
+| Authentication | /var/log/auth.log | |
+| Logged in Users | /var/run/utmp | NOTE: this is not in a human readable format, use the `last` command to read it |
+| History of utmp | /var/log/wtmp | NOTE: this is not in a human readable format, use the `last` command to read it |
+| ----- | Application | ----- |
+| ----- | System | ----- |
 
 # Syslog Formatting
 
