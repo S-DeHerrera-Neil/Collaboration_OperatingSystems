@@ -8,7 +8,9 @@
 
 
 # Important Hardware that is part of the Hardware Initialization Phase(Part 1)
-                   BIOS vs UEFI
+                                                             
+                                                             BIOS vs UEFI
+                                                             
  - BIOS (supports up to 2 Terabytes)
    - MBR (Master Boot Record): contains Disk Partitions
         ### The MBR is 512 bytes, separated into 6 parts:
@@ -24,23 +26,21 @@
    - UEFI Boot Manager: Unlike the BIOS (that reads the MBR), the UEFI reads an EFI Partition.
         - The EFI Partition contains UEFI Boot Managers [Windows bootmgfw.efi or Windows Boot Manager]
 
-## COMMAND: showing whether your machine is running BIOS or UEFI
-   '''
-findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
-Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot environment"
-'''
+## COMMAND(s): showing whether your machine is running BIOS or UEFI
+   PS > findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
+   
+   PS > Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot environment"
+
 ### bcedit (BDCEdit.exe): a Command Line tool used to create new stores, modify existing stores, and add boot menu options.
     - BCD (Boot Configuration Files) provides a store that's used to describe boot applications and boot application settings
     - winload refers to the Windows Boot Loader executable (winload.exe), which is responsible for loading the operating system kernel and other critical  
      components during the boot process. This command can be useful for finding information related to the boot loader configuration, such as its path or 
      settings, within the BCD store.
+
 ## COMMAND: searches the output of BCDEdit for any lines that contain the text winload, regardless of case.
-'''
-bcedit | findstr /i winload
-'''
-## COMMAND: Checking the GUI
-'''
-Msinfo32.exe
+    bcedit | findstr /i winload
+
+### Msinfo32.exe (System Information): a Built-In Windows Utility that provides comprehensive information about a Computer's Hardware, Software, and System Configuration.  
 
 
 # Windows System Initialization
