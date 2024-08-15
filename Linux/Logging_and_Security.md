@@ -77,4 +77,18 @@ Logs messages from mail system of severity Error and lower (Error,Warning,Notice
 
 # Using XPATH (womp womp)
 XPATH is a linux command and tool to parse through .XML files and grab the desired values. Essentially regex for XML files
-- testing tool: [xpather](http://xpather.com/) (similar to regex101)
+
+testing tool: [xpather](http://xpather.com/) (similar to regex101)
+
+### [Syntax](http://www.whitebeam.org/library/guide/TechNotes/xpath.rhtm)
+```
+xpath -q -e `//path/to/the/element/@theattribute` <searchfile>
+```
+- `-q` quiet output, removes unneccessary output
+- `-e` required before an expression
+
+### Examples
+```
+xpath -q -e '//host/address/@addr' output.xml
+```
+grabs the addr attribute from host/address
