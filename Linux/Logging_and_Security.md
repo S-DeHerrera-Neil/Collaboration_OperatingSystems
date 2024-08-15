@@ -119,5 +119,6 @@ cat conn.log | jq '."id.orig_h"' | sort -u | wc -l
 read a file, grab the "id.orig_h" element and grab the count of unique lines
 
 ```
-
+cat conn.log | jq 'select(.resp_bytes >= 40).ts' | wc -l # select the ts line from all blocks where "resp_bytes" >= 40 and gets the count
+cat conn.log | jq '.resp_bytes >= 40' | grep "true" |wc -l # gets boolean values for each resp_bytes value, filters out falses and gets the count
 ```
