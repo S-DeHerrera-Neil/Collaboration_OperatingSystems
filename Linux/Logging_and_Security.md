@@ -76,4 +76,5 @@ Logs messages from any facility of severity Warning and higher (Warning, Error, 
 Logs messages from mail system of severity Error and lower (Error,Warning,Notice,Informational,Debug) to /var/log/test
 
 # Using XPATH (womp womp)
+XPATH is a linux command and tool to parse through .XML files and grab the desired values. Essentially regex for XML files
 - testing tool: [xpather](http://xpather.com/) (similar to regex101)
