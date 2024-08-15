@@ -25,6 +25,7 @@
 
 ### Entry Formatting
 `facility`. `severity` `/path/to/log/location`
+or 
 `facility`. `severity` `@@X.X.X.X:Port` (see syntax for difference between `@` and `@@`)
 
 ### Syslog Codes
