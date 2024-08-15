@@ -15,7 +15,7 @@ mv Z:\* C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps
 ## Method 2: Install via web gui
 - Download Sysinternals Suite via https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 - copy zip file to `C:\Users\<yourusername>\AppData\Local\Microsoft\WindowsApps`
-- unzip all files (powershell command: `expand-archive -path <infile> -destinationpath <outfile>`)
+- unzip all files to current directory (powershell command: `expand-archive <zipfile> .`)
 
 ## Method 3: install via powershell
 
