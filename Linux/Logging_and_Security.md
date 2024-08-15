@@ -10,7 +10,7 @@
 | ---------- | ---- | ----- | 
 | Syslog config files | `/etc/rsyslog/` | |
 | Default log location | `/var/log/` | most logs are in /var/log, all logs are in /var |
-| Authentication |
+| ----- | Authentication | ----- |
 
 # Syslog Formatting
 
