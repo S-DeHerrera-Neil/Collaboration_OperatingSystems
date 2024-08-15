@@ -38,7 +38,11 @@
 | 6 | line printer subsystem | Informational |
 | 7 | network news subsystem | Debug |
 
-### Examples
+### Syntax
+- Severity
+  - `=` means only this severity
+  - `!` means exclude this and any higher severities
+  - 
 
 ```
 0.* /var/log/test
@@ -48,4 +52,9 @@ Logs all kernel messages of any severity to /var/log/test
 ```
 *.4 /var/log/test
 ```
-Logs messages from any facility of severity Warning and lower (Warning, Error, Critical, Alert, and Emergency)
+Logs messages from any facility of severity Warning and higher (Warning, Error, Critical, Alert, and Emergency)
+
+```
+2.!2
+```
+Logs messages from mail system of severity Error and lower (Error,Warning,Notice,Informational,Debug)
