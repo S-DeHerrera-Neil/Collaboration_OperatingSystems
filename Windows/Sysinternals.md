@@ -10,12 +10,12 @@
   - Grabbing the zipfile from another machine: `scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/Local/Microsoft/WindowsApps`
   - Upload via MobaXTerm (open a ssh session to the target machine and use the green up arrow to upload a file)
 - Step 2: File Placement
-  - Ideally the file should be placed in `C:\Users\<user>\AppData\Local\Microsoft\WindowsApps` (this means that the executables can be run from anywhere)
+  - Ideally the file should be placed in `C:\Users\<user>\AppData\Local\Microsoft\WindowsApps` (this allows you to run these programs without being in this directory)
 - Step 2: unpacking zipfile
   - `Expand-Archive SysinternalsSuite.zip .` (Powershell)
 
 ## Alternative Method (share drive)
 
 ```
-
+net use * https://sys
 ```
