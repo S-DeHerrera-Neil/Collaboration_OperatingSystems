@@ -5,7 +5,7 @@
 # Syslog Formatting
 
 ### Entry Formatting
-`facility. severity /path/to/log/location`
+`facility`. `severity` `/path/to/log/location`
 
 ### Syslog Facilities Codes (Source of Events)
 | Code | Facility |
