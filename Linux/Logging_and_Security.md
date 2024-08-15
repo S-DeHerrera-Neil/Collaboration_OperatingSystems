@@ -75,7 +75,7 @@ Logs messages from any facility of severity Warning and higher (Warning, Error, 
 ```
 Logs messages from mail system of severity Error and lower (Error,Warning,Notice,Informational,Debug) to /var/log/test
 
-# Using XPATH (womp womp)
+# Using XPATH (reading XML)
 XPATH is a linux command and tool to parse through .XML files and grab the desired values. Essentially regex for XML files
 
 testing tool: [xpather](http://xpather.com/) (similar to regex101)
@@ -86,9 +86,29 @@ xpath -q -e `//path/to/the/element/@theattribute` <searchfile>
 ```
 - `-q` quiet output, removes unneccessary output
 - `-e` required before an expression
+- `//` this is the start to an expression
+  - `path/to/element`
 
 ### Examples
 ```
 xpath -q -e '//host/address/@addr' output.xml
 ```
-grabs the addr attribute from host/address
+grabs all ips from the nmap xml file
+
+```
+xpath -q -e '//host/address/@addr | //host/ports/port/@portid' output.xml
+```
+grabs all ips and portids from the nmap xml file
+
+# Using JQ (JSON Query)
+JQ is a linux command and tool to parse through .JSON files and grab the desired information. Essentially regex for JSON files
+
+- [Cheat Sheet](https://cheat.sh/jq)
+
+### Examples
+
+
+```
+cat JSON_file | jq .
+```
+prints a JSON file in "pretty" print
