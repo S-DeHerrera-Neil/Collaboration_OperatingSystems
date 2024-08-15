@@ -18,9 +18,10 @@
 `facility`. `severity` `/path/to/log/location`
 
 ### Syslog Facilities Codes (Source of Events)
-| Code | Facility |
-| ---- | -------- |
-| 0 | kernel messages |
+| Code | Facility | - | Code | Severity |
+| ---- | -------- | - | ---- | -------- |
+
+| 0 | kernel messages | | | | |
 | 1 | user-level messages |
 | 2 | mail system |
 | 3 | system daemons |
