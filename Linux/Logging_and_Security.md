@@ -51,6 +51,8 @@
   - `=` means only this severity
   - `!` means exclude this and any higher severities
   - `!=` means exclude only this severity
+- Path
+  - `-` enables syncing (I.E: `-/var/log/messages`)
 
 ### Examples
 ```
