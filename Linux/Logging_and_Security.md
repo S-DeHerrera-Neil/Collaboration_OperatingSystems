@@ -44,6 +44,7 @@
   - `!` means exclude this and any higher severities
   - 
 
+### Examples
 ```
 0.* /var/log/test
 ```
