@@ -8,8 +8,8 @@
 # Paths to Know
 | descriptor | Path | Notes |
 | ---------- | ---- | ----- | 
-| Syslog config files | /etc/rsyslog/ | |
-| Default log location | /var/log/ | |
+| Syslog config files | `/etc/rsyslog/` | |
+| Default log location | `/var/log/` | most logs are in /var/log, all logs are in /var |
 
 
 # Syslog Formatting
