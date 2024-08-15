@@ -20,25 +20,21 @@
 ### Syslog Facilities Codes (Source of Events)
 | Code | Facility | - | Code | Severity |
 | ---- | -------- | - | ---- | -------- |
-
-| 0 | kernel messages | | | | |
-| 1 | user-level messages |
-| 2 | mail system |
-| 3 | system daemons |
-| 4 | security/authorization messages |
-| 5 | messages made by syslogd |
-| 6 | line printer subsystem |
-| 7 | network news subsystem |
+| 0 | kernel messages | | 0 | Emergency |
+| 1 | user-level messages | | 1 | Alert |
+| 2 | mail system | | 2 | Critical |
+| 3 | system daemons | | 3 | Error |
+| 4 | security/authorization messages | | 4 | Warning |
+| 5 | messages made by syslogd | | 5 | Notice |
+| 6 | line printer subsystem | | 6 | Informational |
+| 7 | network news subsystem | | 7 | Debug |
 
 ### Syslog Severity Codes
 
 | Code | Severity |
 | ---- | -------- |
-| 0 | Emergency |
-| 1 | Alert |
-| 2 | Critical |
-| 3 | Error |
-| 4 | Warning |
-| 5 | Notice |
-| 6 | Informational |
-| 7 | Debug |
+
+
+
+
+
