@@ -27,7 +27,7 @@
 `facility`. `severity` `/path/to/log/location`
 
 ### [Syslog Codes](https://en.wikipedia.org/wiki/Syslog)
-| Code | Facility | Severity |
+| Code | [Facility](https://en.wikipedia.org/wiki/Syslog#Facility) | [Facility](https://en.wikipedia.org/wiki/Syslog#Severity_level) |
 | ---- | -------- | -------- |
 | 0 | kernel messages | Emergency |
 | 1 | user-level messages | Alert |
