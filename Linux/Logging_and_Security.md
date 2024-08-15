@@ -53,6 +53,8 @@
   - `!=` means exclude only this severity
 - Path
   - `-` enables syncing (I.E: `-/var/log/messages`)
+  - `@` forward logs to a specified IP and port via UDP
+  - `@@` forward logs to a specified IP and port via TCP
 
 ### Examples
 ```
