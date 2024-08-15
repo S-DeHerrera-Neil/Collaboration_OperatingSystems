@@ -26,7 +26,7 @@
 ### Entry Formatting
 `facility`. `severity` `/path/to/log/location`
 
-### Syslog Codes
+### [Syslog Codes](https://en.wikipedia.org/wiki/Syslog)
 | Code | Facility | Severity |
 | ---- | -------- | -------- |
 | 0 | kernel messages | Emergency |
@@ -37,7 +37,15 @@
 | 5 | messages made by syslogd | Notice |
 | 6 | line printer subsystem | Informational |
 | 7 | network news subsystem | Debug |
-
+| 8 	| uucp 	| |
+| 9 	| cron 	| |
+| 10 	| authpriv 	| |
+| 11 	| ftp 	| |
+| 12 	| ntp 	| |
+| 13 	| security 	| |
+| 14 	| console 	| |
+| 15 	| solaris-cron 	| |
+| 16–23 	| local0 – local7 	| |
 ### Syntax
 - Severity
   - `=` means only this severity
