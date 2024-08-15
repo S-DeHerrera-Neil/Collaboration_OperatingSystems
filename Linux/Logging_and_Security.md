@@ -46,11 +46,11 @@
 | 14 	| console 	| |
 | 15 	| solaris-cron 	| |
 | 16–23 	| local0 – local7 	| |
-### Syntax
+### [Syntax](https://man7.org/linux/man-pages/man5/rsyslog.conf.5.html)
 - Severity
   - `=` means only this severity
   - `!` means exclude this and any higher severities
-  - 
+  - `!=` means exclude only this severity
 
 ### Examples
 ```
