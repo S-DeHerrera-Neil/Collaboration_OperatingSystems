@@ -37,3 +37,15 @@
 | 5 | messages made by syslogd | Notice |
 | 6 | line printer subsystem | Informational |
 | 7 | network news subsystem | Debug |
+
+### Examples
+
+```
+0.* /var/log/test
+```
+Logs all kernel messages of any severity to /var/log/test
+
+```
+*.4 /var/log/test
+```
+Logs messages from any facility of severity Warning and lower (Warning, Error, Critical, Alert, and Emergency)
