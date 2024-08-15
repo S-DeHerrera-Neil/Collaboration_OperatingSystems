@@ -17,7 +17,7 @@
 ### Entry Formatting
 `facility`. `severity` `/path/to/log/location`
 
-### Syslog Facilities Codes (Source of Events)
+### Syslog Codes
 | Code | Facility | - | Code | Severity |
 | ---- | -------- | - | ---- | -------- |
 | 0 | kernel messages | | 0 | Emergency |
@@ -28,13 +28,6 @@
 | 5 | messages made by syslogd | | 5 | Notice |
 | 6 | line printer subsystem | | 6 | Informational |
 | 7 | network news subsystem | | 7 | Debug |
-
-### Syslog Severity Codes
-
-| Code | Severity |
-| ---- | -------- |
-
-
 
 
 
