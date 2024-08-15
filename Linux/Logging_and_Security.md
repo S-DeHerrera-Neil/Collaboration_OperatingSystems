@@ -52,9 +52,9 @@ Logs all kernel messages of any severity to /var/log/test
 ```
 *.4 /var/log/test
 ```
-Logs messages from any facility of severity Warning and higher (Warning, Error, Critical, Alert, and Emergency)
+Logs messages from any facility of severity Warning and higher (Warning, Error, Critical, Alert, and Emergency) to /var/log/test
 
 ```
 2.!2
 ```
-Logs messages from mail system of severity Error and lower (Error,Warning,Notice,Informational,Debug)
+Logs messages from mail system of severity Error and lower (Error,Warning,Notice,Informational,Debug) to /var/log/test
