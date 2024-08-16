@@ -1,0 +1,97 @@
+Powershell
+Terminal Learning Objectives
+1. Discuss Commands Used in PowerShell
+2. Identify Various Components of Windows Remoting
+3. Discuss PowerShell Profiles
+4. Complete Windows PowerShell CTFd Challenges PE
+
+Windows Registry
+Terminal Learning Objectives
+1. Explain the Purpose of Windows Registry
+2. Discuss Windows Registry Tools
+3. Identify Windows Registry for Suspicious Activity
+4. Identify Forensically Relevant Keys
+5. Identify Malicious Registry
+6. Complete Windows Registry CTFd Challenges PE
+
+Windows Alternate Data Streams
+Terminal Learning Objectives
+1. Identify Concepts of Forensic Analysis
+2. Identify Aspects of Virtualization
+3. Identify the Importance of Situational Awareness
+4. Complete Alternate Data Streams CTFd Challenges PE
+
+Linux Essentials
+Terminal Learning Objectives
+1. Explain the Purpose of Understanding the Linux Environment
+2. Identify Commands to Enumerate Processes
+3. Identify Methods of Automation and Logic
+4. Identify Critical Locations in the Linux File System
+5. Discuss String Manipulation Techniques to Identify Key Information
+6. Complete Linux Essentials CTFd Challenges PE
+
+Windows Boot Process
+Terminal Learning Objectives
+1. Describe the Windows Boot Process
+2. Identify the Windows Logon Process
+3. Discuss Analyzing Boot Configurations with BCDEdit
+4. Complete Windows Boot CTFd Challenges PE
+
+Linux Boot Process
+Terminal Learning Objectives
+1. Describe the Linux Boot Process
+2. Identify the Linux Logon Process
+3. Complete Linux Boot CTFd Challenges PE
+
+Windows Process Validity
+Terminal Learning Objectives
+1. Describe Windows Processes
+2. Identify Valid Windows Processes
+3. Discuss Commands to Enumerate Processes
+4. Identify Processes Executed from Scheduled Tasks
+5. Complete Windows Process Validity CTFd Challenges PE
+
+UAC Bypass
+Terminal Learning Objectives
+1. Describe User Account Control Bypass
+2. Identify User Account Control Activity
+3. Complete Windows User Account Control CTFd Challenges PE
+
+Linux Process Validity
+Terminal Learning Objectives
+1. Describe Linux Processes
+2. Identify Valid Linux Processes
+3. Discuss Commands to Enumerate Processes
+4. Complete Linux Process CTFd Challenges PE
+
+Windows Auditing & Logging
+Terminal Learning Objectives
+1. Identify Windows Artifacts
+2. Describe Windows Auditing & Logging
+3. Complete Windows Auditing & Logging CTFd Challenges PE
+
+Linux Auditing and Logging
+Terminal Learning Objectives
+1. Describe the Advantages and Disadvantages of Auditing & Logging
+2. Identify Auditing Activities
+3. Identify Actions that Contribute to Log Files
+4. Identify Linux Log Types
+5. Complete Linux Auditing & Logging CTFd Challenges PE
+
+Memory Analysis
+Terminal Learning Objectives
+1. Describe Memory Analysis
+2. Describe Order of Collecting Volatile Data
+3. Complete Memory Analysis CTFd Challenges PE
+
+Active Directory Enumeration
+Terminal Learning Objectives
+1. Identify Active Directory Enumeration
+2. Describe Active Directory User Enumeration
+3. Describe Active Directory Group Enumeration
+4. Complete Active Directory CTFd Challenges PE
+
+Windows SysInternals
+Terminal Learning Objectives
+1. Identify SysInternals Tools to Enumerate Systems
+2. Identify SysInternals Tools to Analyze Processes
