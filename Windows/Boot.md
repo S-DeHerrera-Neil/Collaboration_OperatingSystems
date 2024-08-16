@@ -9,7 +9,7 @@
 
 # Important Hardware that is part of the Hardware Initialization Phase(Part 1)
                                                              
-                                                             BIOS vs UEFI
+                              BIOS vs UEFI
                                                              
  - BIOS (supports up to 2 Terabytes)
    - MBR (Master Boot Record): contains Disk Partitions
@@ -68,3 +68,5 @@
 ![alt text](https://git.cybbh.space/os/public/-/raw/master/os/modules/006_windows_boot_process/pages/winboot1.png)
 
  
+
+Insert comment here <__>...
