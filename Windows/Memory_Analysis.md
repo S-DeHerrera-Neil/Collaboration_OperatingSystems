@@ -28,9 +28,13 @@ Moves executable to Memory Analysis folder
 
 # Running Volatility
 
+## THE ULTIMATE GUIDE TO VOLATILITY
+https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
+
+
 ### Syntax
 ```
-volatility.exe -f <vmem file> --profile <plugin> -d <outfile> CONFIRM THIS SYNTAX!!!
+volatility.exe -f <vmem file> --profile <profile> <plugin> [-D <outfile>] CONFIRM THIS SYNTAX!!!
 ```
 
 ### Important Commands
