@@ -15,7 +15,7 @@ Part 1
 Part 2 
 - ( BIOS -> MBR ) [MBR](Windows/MBR)
         or
-- (UEFI -> [Windows bootmgfw.efi or Windows Boot Manager]) [UEFI Boot Managers](Windows/Additional_Information/UEFI Boot Managers)
+- (UEFI -> [Windows bootmgfw.efi or Windows Boot Manager]) [UEFI Boot Managers](Windows/Additional _Information/UEFI_Boot_Managers)
 
 # Important Hardware that is part of the Hardware Initialization Phase (Part 1)
                                                              
