@@ -1,9 +1,12 @@
 # Installing Notepad++
 ```
-PS C:\windows\system32> invoke-webrequest -uri "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.Installer.x64.exe" -outfile "C:\npp.7.8.8.Installer.x64.exe" 
-PS C:\windows\system32> cd C:\ 
-PS C:\> start-process npp.7.8.8.Installer.x64.exe -ArgumentList '/S'
+invoke-webrequest -uri "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.Installer.x64.exe" -outfile "C:\npp.7.8.8.Installer.x64.exe" 
 ```
+Download installer
+```
+start-process npp.7.8.8.Installer.x64.exe -ArgumentList '/S'
+```
+Run installer
 
 # Installing Volatility
 Use Powershell for all steps
