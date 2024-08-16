@@ -54,3 +54,8 @@ volatility -f .\cridex.vmem --profile=WinXPSP2x86 cmdscan
 ```
 Get console history
 
+```
+
+```
+Search for a process by PID (-p option)
+
