@@ -6,11 +6,16 @@
  - Loading the Boot Sector or Boot Manager(Part 2)
  - Loading the Operating System from the Boot Sector(Part 3)
 
-Part 1 (Device Powers on -> firmware interfaces initialize {BIOS/UEFI})
-  - BIOS 
-Part 2 ( BIOS -> MBR ) [MBR](Windows/MBR)
+Part 1 
+- (Device Powers on -> firmware interfaces initialize {BIOS/UEFI})
+   
+   - BIOS:  
+   - UEFI: 
+
+Part 2 
+- ( BIOS -> MBR ) [MBR](Windows/MBR)
         or
-       (UEFI -> [Windows bootmgfw.efi or Windows Boot Manager])
+- (UEFI -> [Windows bootmgfw.efi or Windows Boot Manager])
 # Important Hardware that is part of the Hardware Initialization Phase (Part 1)
                                                              
                               BIOS vs UEFI                                                         
