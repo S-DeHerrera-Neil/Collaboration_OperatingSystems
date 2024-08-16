@@ -12,7 +12,7 @@ Run installer
 Use Powershell for all steps
 
 ```
-invoke-webrequest -uri "http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6.win.standalone.zip" -outfile "C:\Users\andy.dwyer\Desktop\Memory_Analysis\volatility_2.6_win64_standalone.zip"
+invoke-webrequest -uri "invoke-webrequest -uri "http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6.win.standalone.zip"" -outfile "C:\Users\andy.dwyer\Desktop\Memory_Analysis\volatility_2.6_win64_standalone.zip"
 ```
 Download standalone zip
 
@@ -40,10 +40,17 @@ volatility.exe -f <vmem file> --profile <profile> <plugin> [-D <outfile>] CONFIR
 ### Important Commands
 
 ```
-volatility -f .\cridex.vmem imageinfo
+volatility -f .\0zapftis.vmem imageinfo
 ```
 Get recommended profile
 
 ```
+volatility -f .\0zapftis.vmem --profile "WinXPSP2x86" memdump -p 1640 -D .
+```
+Read previously run commands
 
 ```
+volatility -f .\cridex.vmem --profile=WinXPSP2x86 cmdscan
+```
+Get console history
+
