@@ -5,7 +5,7 @@ PS C:\windows\system32> cd C:\
 PS C:\> start-process npp.7.8.8.Installer.x64.exe -ArgumentList '/S'
 ```
 
-## Installing Volatility
+# Installing Volatility
 Use Powershell for all steps
 
 ```
