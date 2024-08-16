@@ -9,8 +9,8 @@
 Part 1 
 - (Device Powers on -> firmware interfaces initialize {BIOS/UEFI})
    
-   - BIOS:  
-   - UEFI: 
+   - BIOS: [BIOS](Windows/Additional _Information/BIOS)   
+   - UEFI: [UEFI](Windows/Additional _Information/UEFI.md)
 
 Part 2 
 - ( BIOS -> MBR ) [MBR](Windows/MBR)
