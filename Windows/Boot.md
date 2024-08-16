@@ -9,11 +9,11 @@
 Part 1 
 - (Device Powers on -> firmware interfaces initialize {BIOS/UEFI})
    
-   - BIOS: [BIOS](Windows/Additional _Information/BIOS)   
-   - UEFI: [UEFI](Windows/Additional _Information/UEFI.md)
+   - BIOS: [BIOS](Windows/Additional_Information/BIOS)   
+   - UEFI: [UEFI](Windows/Additional_Information/UEFI.md)
 
 Part 2 
-- ( BIOS -> MBR ) [MBR](Windows/MBR)
+- ( BIOS -> MBR ) [MBR](Windows/Additional_Information/MBR)
 - (UEFI -> UEFI Boot Managers) [UEFI_Boot_Managers](Windows/Additional_Information/UEFI_Boot_Managers)
 
 # Important Hardware that is part of the Hardware Initialization Phase (Part 1)
