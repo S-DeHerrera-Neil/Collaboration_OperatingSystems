@@ -6,11 +6,14 @@
  - Loading the Boot Sector or Boot Manager(Part 2)
  - Loading the Operating System from the Boot Sector(Part 3)
 
-
+Part 1 (Device Powers on -> firmware interfaces initialize {BIOS/UEFI})
+  - BIOS 
+Part 2 ( BIOS -> MBR ) [MBR](Windows/MBR)
+        or
+       (UEFI -> )
 # Important Hardware that is part of the Hardware Initialization Phase(Part 1)
                                                              
-                              BIOS vs UEFI
-                                                             
+                              BIOS vs UEFI                                                         
  - BIOS (supports up to 2 Terabytes)
    - MBR (Master Boot Record): contains Disk Partitions
         ### The MBR is 512 bytes, separated into 6 parts:
@@ -45,7 +48,7 @@
 ### Msinfo32.exe (System Information): a Built-In Windows Utility that provides comprehensive information about a Computer's Hardware, Software, and System Configuration.  
 
 # Loading the Boot Sector or Manager(Part 2)
-  - At this point the.... Finish later.
+  - After
 
 # Loading the Operating System Kernel(Part 3)
  ### bootmgfw.efi(UEFI) reads a BCD(Boot Configuration Data) in the EFI system partition to load the winload.efi file
