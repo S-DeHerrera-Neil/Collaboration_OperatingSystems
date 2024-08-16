@@ -100,6 +100,16 @@ xpath -q -e '//host/address/@addr | //host/ports/port/@portid' output.xml
 ```
 grabs all ips and portids from the nmap xml file
 
+```
+xpath -q -e '//host/ports/port/@portid | //host/ports/port/@portid/../../../address/@addr' output.xml
+```
+This grabs all ips with open ports and all ports
+
+this is pretty complicated and a bit inefficient so lets delve into it:
+- `//host/ports/port/@portid` grabs all the port ids
+- `//host/ports/port/@portid/../../../address/@addr` So what this does is try to go to the portid element then goes back up to grab the address (this means that it will fail if portid would fail)
+
+
 # Using JQ (JSON Query)
 JQ is a linux command and tool to parse through .JSON files and grab the desired information. Essentially regex for JSON files
 
