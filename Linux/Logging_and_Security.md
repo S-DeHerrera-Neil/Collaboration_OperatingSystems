@@ -7,7 +7,7 @@
 
 # Paths to Know
 | descriptor | Path | Notes |
-| ---------- | ---- | ----- | 
+| -:- | ---- | ----- | 
 | Syslog config files | `/etc/rsyslog.d/` | |
 | Default log location | `/var/log/` | most logs are in /var/log, all logs are in /var |
 | | | |
@@ -16,7 +16,7 @@
 | Logged in Users | /var/run/utmp | NOTE: this is not in a human readable format, use the `last` command to read it |
 | History of utmp | /var/log/wtmp | NOTE: this is not in a human readable format, use the `last` command to read it |
 | ----- | Application | ----- |
-| ----------------------- | System | ----- |
+| ----- | System | ----- |
 | Legacy Catch all | /var/log/messages | |
 | Ubuntu/Debian Catch all | /var/log/syslog | |
 | Device Messenger | run `dmesg` | This queries /proc/kmsg |
