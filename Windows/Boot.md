@@ -26,7 +26,7 @@
    - UEFI Boot Manager: Unlike the BIOS (that reads the MBR), the UEFI reads an EFI Partition.
         - The EFI Partition contains UEFI Boot Managers [Windows bootmgfw.efi or Windows Boot Manager]
 
-  ### - After the BIOS or the UEFI have found their respective boot loaders they hand over their control of the boot process(End of Part 1)
+  ### - After the BIOS or the UEFI have found their respective boot loaders they hand over their control of the boot process (End of Part 1)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## COMMAND(s): showing whether your machine is running BIOS or UEFI
    PS > findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
