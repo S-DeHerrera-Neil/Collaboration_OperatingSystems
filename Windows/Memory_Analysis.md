@@ -25,3 +25,21 @@ Unzip file
 mv "C:\Users\andy.dwyer\Desktop\Memory_Analysis\volatility_2.6_win64_standalone\volatility_2.6_win64_standalone.exe" "C:\Users\andy.dwyer\Desktop\Memory_Analysis\volatility_2.6_win64_standalone.exe"
 ```
 Moves executable to Memory Analysis folder
+
+# Running Volatility
+
+### Syntax
+```
+volatility.exe -f <vmem file> --profile <plugin> -d <outfile> CONFIRM THIS SYNTAX!!!
+```
+
+### Important Commands
+
+```
+volatility -f .\cridex.vmem imageinfo
+```
+Get recommended profile
+
+```
+
+```
