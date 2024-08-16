@@ -7,6 +7,9 @@
   - [Boot](Windows/Boot.md)
   - [Processes/Services](Windows/Processes_and_Services.md)
   - [Logging/Security](Windows/Logging_and_Security.md)
+  - [Memory Analysis](Windows/Memory_Analysis.md)
+  - [Sysinternals](Windows/Sysinternals.md)
+
 ## Linux
   - [File_Search](Linux/File_Search.md)
   - [Boot](Linux/Boot.md)
