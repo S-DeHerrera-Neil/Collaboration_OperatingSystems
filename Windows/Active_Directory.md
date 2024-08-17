@@ -15,7 +15,7 @@ Get-Command -Module activedirectory
 lists all powershell commands for active directory machines
 
 
-# Enumerate active-directory users and groups
+# Enumerate Active Directory users and groups
 
 ## Get-ADGroupMember
 
