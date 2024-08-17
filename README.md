@@ -47,4 +47,4 @@
 >
 > go to the [VTA Range](https://vta.cybbh.space/) > instances > select one of the machines > console
 >
-> from here you can use SSH or RDP to the admin station (there may be significant latency with using this method)
+> from here you can use SSH or RDP to the admin station
