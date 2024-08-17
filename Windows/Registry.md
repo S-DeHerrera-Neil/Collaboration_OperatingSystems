@@ -1,11 +1,13 @@
 # Commands
 
-### reg query (best overall, but cannot use wildcards)
+### reg query
+Allows full access to the registry
 ```
 reg query '<registy_path>`
 ```
 
-### get-childitem (can use wildcards but can run into permission issues)
+### get-childitem
+Allows the use of wildcards to specify multiple paths. Limited when trying to access restricted registries such as HKLM\Security
 ```
 get-childitem -force 'registry::<registry_path>' 2>$null
 ```
