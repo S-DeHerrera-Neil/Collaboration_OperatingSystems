@@ -1,18 +1,18 @@
 # Commands
 
-## reg query
+## reg query (CMD and powershell)
 Allows full access to the registry
 ```
 reg query '<registy_path>`
 ```
 
-## get-childitem
+## get-childitem (powershell)
 Allows the use of wildcards to specify multiple paths. Limited when trying to access restricted registries such as HKLM\Security
 ```
 get-childitem -force 'registry::<registry_path>' 2>$null
 ```
 
-example:
+### example
 ```
 get-childitem -force 'registry::HKU\*\Software\Microsoft\Windows\CurrentVersion\Run
 ```
