@@ -29,7 +29,7 @@ Get-ADGroupMember [-Identity 'name'] [-Recursive]
 Get-ADUser [-Filter 'Name -like "*"']
 ```
 
-### examples
+### Examples
 
 ```
 get-aduser -filter {Enabled -eq "FALSE"} -properties name, enabled
