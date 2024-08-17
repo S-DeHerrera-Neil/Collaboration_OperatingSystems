@@ -1,1 +1,2 @@
-
+ - Winresume.exe: reads previously saved data from hiberfil.sys (hibernation mode) to restore a previous Windows instance
+    - On UEFI, Winresume.exe is named winresume.efi located @ \Windows\System32\Boot   
