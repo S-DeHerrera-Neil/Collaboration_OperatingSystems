@@ -15,7 +15,8 @@
 
 > [!NOTE]
 > Limited GUI refers to devices that do not have explorer.exe running
-> Open taskmgr.exe by pressing `ctrl` + `shift` + `esc` then hit "file" and "run new task" then enter "cmd.exe" to get a command line
+> 
+> To fix this: Open taskmgr.exe by pressing `ctrl` + `shift` + `esc` then hit "file" and "run new task" then enter "cmd.exe" to get a command line
 
 ## Windows 
   - [File_Search](Windows/File_Search.md)
