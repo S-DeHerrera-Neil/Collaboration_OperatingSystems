@@ -27,17 +27,14 @@ Part 2
  bcedit: [BCDEdit](Additional_Information/BDCEdit.md)
  Msinfo32.exe: [Msinfo32](Additional_Information/Msinfo32.md)
  
- (BDCEdit.exe): a Command Line tool used to create new stores, modifying existing stores, and add boot menu options.
-    - BCD (Boot Configuration Files) provides a store that's used to describe boot applications and boot application settings
-    - winload refers to the Windows Boot Loader executable (winload.exe), which is responsible for loading the operating system kernel and other critical  
-     components during the boot process. This command can be useful for finding information related to the boot loader configuration, such as its path or 
-     settings, within the BCD store.
+winload [winload](Additional_Information/winload.md) 
+   
+## COMMANDS: 
+- searches the output of BCDEdit for any lines that contain the text winload, regardless of case.
 
-## COMMAND: searches the output of BCDEdit for any lines that contain the text winload, regardless of case.
-    bcedit | findstr /i winload
+      > bcedit | findstr /i winload
 
-### Msinfo32.exe (System Information): a Built-In Windows Utility that provides comprehensive information about a Computer's Hardware, Software, and System Configuration.  
-
+ 
 # Loading the Boot Sector or Manager (Part 2)
   - After
 
@@ -45,9 +42,7 @@ Part 2
  ### bootmgfw.efi(UEFI) reads a BCD(Boot Configuration Data) in the EFI system partition to load the winload.efi file
 
  ### bootmgr or NTDLR readds the file \Boot\BCD to locate winload.exe
-  - winload programs: load basic drivers and start the next part of the Windows Boot Process- loading the Kernel(ntoskrnl.exe)
-   - winload.exe: load essential drivers required to read data from the disk, loads ntoskrnl(and dependencies)
-   - Winresume.exe: readspreviously saved data from hiberfil.sys (hibernation mode) to restore a previous Windows instance
+    - Winresume.exe: readspreviously saved data from hiberfil.sys (hibernation mode) to restore a previous Windows instance
     - On UEFI, Winresume.exe is named winresume.efi located @ \Windows\System32\Boot   
   
  ### ntoskrnl.exe -> LogonUI.exe (End of Part 3)
