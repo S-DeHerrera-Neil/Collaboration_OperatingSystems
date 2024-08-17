@@ -39,9 +39,12 @@
 - [cybbh_setup_guide](https://cctc.cybbh.io/students/students/latest/Day_0_Setup.html)
 - [VTA_Range](https://vta.cybbh.space/)
 - [CTF (VPN or local network access required)](http://10.50.22.197:8000)
+- [Persistance](Persistance.md)
+
+
 > [!TIP]
 > The VM range can be accessed wihout the VPN by opening one of the instances on the VTA Range and going to console. From there you can simply ssh or rdp to the admin station
 >
-> There will be significant latency
+> Please note, there may be significant latency
 
-- [Persistance](Persistance.md)
+
