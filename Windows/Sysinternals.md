@@ -8,10 +8,12 @@
 - Step 1.5: Moving zipfile to another machine (if neccessary)
   - Moving the zipfile to another machine:
 ```
+scp <file_to_send> <remote_ip>:<where_to_send_file>
 scp SysinternalsSuite.zip 10.X.X.X:/Users/<user>/AppData/Local/Microsoft/WindowsApps
 ```
   - Grabbing the zipfile from another machine:
 ```
+scp <remote_ip>:<path_to_file> <where_to_send_file>
 scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/Local/Microsoft/WindowsApps
 ```
   - Upload via MobaXTerm (open a ssh session to the target machine and use the green up arrow in the file manager window on the left to upload a file)
