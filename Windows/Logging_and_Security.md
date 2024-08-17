@@ -1,7 +1,7 @@
 # Log locations
 ### Commands to know
 - cmd: `reg query "<key>"`
-- powershell: `Get-ItemProperty "<key>"`
+- powershell: `Get-ChildItem "<key>"`
 - sysinternals: `strings <searchfile> -accepteula`
 
 ## User Assist
