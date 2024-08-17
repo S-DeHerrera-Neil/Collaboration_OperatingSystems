@@ -24,8 +24,8 @@ Part 2
    PS > Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot environment"
 
 ### Tools:
- bcedit: [BCDEdit](Windows/Additional_Information/BDCEdit.md)
- Msinfo32.exe: [Msinfo32](Windows/Additional_Information/Msinfo32.md)
+ bcedit: [BCDEdit](Additional_Information/BDCEdit.md)
+ Msinfo32.exe: [Msinfo32](Additional_Information/Msinfo32.md)
  
  (BDCEdit.exe): a Command Line tool used to create new stores, modifying existing stores, and add boot menu options.
     - BCD (Boot Configuration Files) provides a store that's used to describe boot applications and boot application settings
