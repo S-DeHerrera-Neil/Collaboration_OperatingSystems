@@ -16,7 +16,7 @@ get-childitem -force 'registry::<registry_path>' 2>$null
 ```
 get-childitem -force 'registry::HKU\*\Software\Microsoft\Windows\CurrentVersion\Run
 ```
-grabs all users startup programs
+grabs all user's persistent programs
 
 ## Persistence
 ```
@@ -40,7 +40,7 @@ C:\User\<User>\AppData\Microsoft\Windows\Start Menu\Programs\StartUp
 ```
 Shared Startup folder: 
 ```
-%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
 ```
 
 ## Microsoft Edge URL History
