@@ -28,7 +28,11 @@ This starts Phase 3. (End of Phase 2)
 Phase 3. (winload.exe starts the OS[ntoskernel.exe])
 - [winload](Additional_Information/winload.md)
 - [ntoskernel.exe](Additional_Information/ntoskernel.md)
-(End of Phase 3)
+ 
+ ### bootmgfw.efi(UEFI) reads a BCD(Boot Configuration Data) in the EFI system partition to load the winload.efi file
+
+### ntoskrnl.exe -> LogonUI.exe (End of Part 3)
+(End of Phase 3 Start of [SubSystems](Additional_Information/SubSystems.md))
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 ## COMMANDS: 
 - shows whether your machine is running BIOS or UEFI
@@ -41,12 +45,7 @@ Phase 3. (winload.exe starts the OS[ntoskernel.exe])
 
       > bcedit | findstr /i winload
 
- 
- ### bootmgfw.efi(UEFI) reads a BCD(Boot Configuration Data) in the EFI system partition to load the winload.efi file
-
-
- ### ntoskrnl.exe -> LogonUI.exe (End of Part 3)
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  - Loading the Operating System Kernel
  - Initializing the Kernel
  - Starting Subsystems
