@@ -4,7 +4,7 @@
 | Name | IP | User/Password | OS | GUI | Networking |
 | - | - | - | - | - | - |
 | Domain Controller | 10.X.0.1 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | Limited* | ??? |
-| File-Server | 10.X.0.3 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | N | ??? |
+| File-Server | 10.X.0.3 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | Limited* | N |
 | Workstation2 | 10.X.0.4 | andy.dwyer : BurtMacklinFBI | Windows 10 Enterprise | ??? | ??? |
 | Workstation1 | 10.X.0.5 | student : password | Windows 10 Enterprise | ??? | ??? |
 | Terra | 10.X.0.6 | garviel : luna | Linux Ubuntu | ??? | ??? |
@@ -31,4 +31,7 @@
 - [VTA_Range](https://vta.cybbh.space/)
 - [CTF (VPN or local network access required)](http://10.50.22.197:8000)
 
+
 - [Persistance](Persistance.md)
+
+* This machine does not have a full gui, open taskmgr.exe by entering `ctrl` + `shift` + `esc` then hitting "file" and "run new task". Run cmd.exe to open a commandline.
