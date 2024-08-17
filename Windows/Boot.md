@@ -6,30 +6,32 @@
  - Loading the Boot Sector or Boot Manager(Part 2)
  - Loading the Operating System from the Boot Sector(Part 3)
 
-Part 1 
-- (Device Powers on -> firmware interfaces initializes {BIOS/UEFI})
+Part 1. (Device Powers on -> firmware interfaces initializes {BIOS/UEFI})
    
    - BIOS: [BIOS](Additional_Information/BIOS.md)
    - UEFI: [UEFI](Additional_Information/UEFI.md)
-
-Part 2 
+After the BIOS or the UEFI have found their respective boot loaders they hand over their control of the boot process (End of Part 1)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Part 2. 
 - ( BIOS -> MBR ) [MBR](Additional_Information/MBR.md)
 - (UEFI -> UEFI Boot Managers) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
-
-   ### - After the BIOS or the UEFI have found their respective boot loaders they hand over their control of the boot process (End of Part 1)
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-## COMMAND(s): showing whether your machine is running BIOS or UEFI
-   PS > findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
-   
-   PS > Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot environment"
 
 ### Tools:
  bcedit: [BCDEdit](Additional_Information/BDCEdit.md)
  Msinfo32.exe: [Msinfo32](Additional_Information/Msinfo32.md)
  
-winload [winload](Additional_Information/winload.md) 
-   
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+winload: [winload](Additional_Information/winload.md) 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 ## COMMANDS: 
+- shows whether your machine is running BIOS or UEFI
+
+      PS > findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
+   
+      PS > Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot environment"
+
 - searches the output of BCDEdit for any lines that contain the text winload, regardless of case.
 
       > bcedit | findstr /i winload
