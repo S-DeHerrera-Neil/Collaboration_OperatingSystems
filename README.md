@@ -41,8 +41,3 @@
 
 
 - [Persistance](Persistance.md)
-
-
-
-\*
-This machine does not have a full gui, open taskmgr.exe by entering `ctrl` + `shift` + `esc` then hitting "file" and "run new task". Run cmd.exe to open a commandline.
