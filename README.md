@@ -43,8 +43,8 @@
 
 
 > [!TIP]
-> The VM range can be accessed wihout the VPN by opening one of the instances on the VTA Range and going to console. From there you can simply ssh or rdp to the admin station
+> Accessing VM range without VPN
 >
-> Please note, there may be significant latency
-
-
+> go to the [VTA Range](https://vta.cybbh.space/) > instances > select one of the machines > console
+>
+> from here you can use SSH or RDP to the admin station (there may be significant latency with using this method)
