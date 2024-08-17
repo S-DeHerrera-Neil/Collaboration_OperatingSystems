@@ -8,3 +8,5 @@
         - Partition entry 4 (16 bytes)
         - Boot Signature (2 bytes)
           - The Partition code that starts the first stage of loading an Operating System is referred to as the "Boot Loader" 
+
+# bootmgr & NTDLR
