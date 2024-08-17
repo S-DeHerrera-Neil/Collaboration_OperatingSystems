@@ -23,6 +23,7 @@ scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/
     `move SysinternalsSuite.zip "C:\Users\<user>\AppData\Local\Microsoft\WindowsApps"` (CMD and Powershell)
 - Step 2: unpacking zipfile
   - `Expand-Archive SysinternalsSuite.zip .` (Powershell)
+  - Or extract all via the file explorer gui
 
 ## Alternative Method (share drive)
 
