@@ -18,6 +18,7 @@
   - [Processes/Services](Windows/Processes_and_Services.md)
   - [Logging/Security](Windows/Logging_and_Security.md)
   - [Memory Analysis](Windows/Memory_Analysis.md)
+  - [Active Directory Enumeration](Windows/Active_Directory.md)
   - [Sysinternals](Windows/Sysinternals.md)
 
 ## Linux
