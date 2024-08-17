@@ -3,7 +3,7 @@
 
 | Name | IP | User/Password | OS | GUI | Networking |
 | - | - | - | - | - | - |
-| Domain Controller | 10.X.0.1 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | Limited* | ??? |
+| Domain Controller | 10.X.0.1 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | Limited* | N |
 | Admin-Server | 10.50.X.X | andy.dwyer : BurtMacklinFBI | Windows 10 Enterprise | Full | Y |
 | File-Server | 10.X.0.3 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | Limited* | N |
 | Workstation2 | 10.X.0.4 | andy.dwyer : BurtMacklinFBI | Windows 10 Enterprise | None | N |
