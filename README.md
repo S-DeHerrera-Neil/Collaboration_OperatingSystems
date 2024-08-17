@@ -7,9 +7,9 @@
 | File-Server | 10.X.0.3 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | N | ??? |
 | Workstation2 | 10.X.0.4 | andy.dwyer : BurtMacklinFBI | Windows 10 Enterprise | ??? | ??? |
 | Workstation1 | 10.X.0.5 | student : password | Windows 10 Enterprise | ??? | ??? |
+| Terra | 10.X.0.6 | garviel : luna | Linux Ubuntu | ??? | ??? |
+| Minas-Tirith | 10.X.0.7 | bombadil : jolly | Linux Debian | ??? | ??? |
 
-- Domain Controller (10.X.0.1) - Windows Server 2019 Datacenter
-- 
 ## Windows 
   - [File_Search](Windows/File_Search.md)
   - [Registry](Windows/Registry.md)
