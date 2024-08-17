@@ -10,7 +10,6 @@
    - [BIOS](Additional_Information/BIOS.md)
    - [UEFI](Additional_Information/UEFI.md)
    - [bootmgr](Additional_Information/bootmgr.md) 
-   - [NTDLR](Additional_Information/NTDLR.md)
    - [Winresume](Additional_Information/winresume.md) 
  
  After either BIOS(.exe) or UEFI(.efi) initialize winload[.exe|.efi] (Phase 2. Begins)
