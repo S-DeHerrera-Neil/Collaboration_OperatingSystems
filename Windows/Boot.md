@@ -14,7 +14,7 @@ Part 1
 
 Part 2 
 - ( BIOS -> MBR ) [MBR](Additional_Information/MBR.md)
-- (UEFI -> UEFI Boot Managers) [UEFI_Boot_Managers](Additional_Information/UEFI_Boot_Managers.md)
+- (UEFI -> UEFI Boot Managers) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
 
 # Important Hardware that is part of the Hardware Initialization Phase (Part 1)
                                                              
