@@ -7,11 +7,10 @@
   - Or enter the url `https://download.sysinternals.com/files/SysinternalsSuite.zip` into a web browser and the file will be downloaded automatically
 - Step 1.5: Moving zipfile to another machine (if neccessary)
   - Moving the zipfile to another machine:
-  ```
+```
 scp SysinternalsSuite.zip 10.X.X.X:/Users/<user>/AppData/Local/Microsoft/WindowsApps
 ```
   - Grabbing the zipfile from another machine:
-```
 ```
 scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/Local/Microsoft/WindowsApps
 ```
