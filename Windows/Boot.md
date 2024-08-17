@@ -6,19 +6,20 @@
  - Phase 2.(Loading the Boot Sector[BIOS]or Boot Managers[UEFI])
  - Phase 3.(Loading the Operating System from the Boot Sector)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Phase 1. (firmware interfaces initializes {BIOS|UEFI})
-   - BIOS: [BIOS](Additional_Information/BIOS.md)
-   - UEFI: [UEFI](Additional_Information/UEFI.md)
-After either the [BIOS|UEFI] initialize, they look for their respective boot loaders via bootmgr or NTDLR.
- - [bootmgr](Additional_Information) 
- - [NTDLR](Additional_Information/NTDLR.md). 
- reads the file \Boot\BCD to locate winload.exe
+# Phase 1. (firmware interfaces initializes {BIOS|UEFI})
+   - [BIOS](Additional_Information/BIOS.md)
+   - [UEFI](Additional_Information/UEFI.md)
+   - [bootmgr](Additional_Information) 
+   - [NTDLR](Additional_Information/NTDLR.md)
+   - [Winresume](Additional_Information/winresume.md) 
+ 
+ After either the [BIOS|UEFI] initialize, they use bootmgr or NTDLR to locate winload.exe.
     - Winresume.exe: reads previously saved data from hiberfil.sys (hibernation mode) to restore a previous Windows instance
     - On UEFI, Winresume.exe is named winresume.efi located @ \Windows\System32\Boot   
   
 When they find them it starts Phase 2. (End of Phase 1)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Phase 2. (firmware finds the bootloader)
+# Phase 2. (firmware finds the bootloader)
 - ( BIOS -> MBR -> winload.exe) [MBR](Additional_Information/MBR.md)
 - (UEFI -> UEFI -> winload.exe) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
 ### Tools:
