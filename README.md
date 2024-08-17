@@ -1,9 +1,9 @@
 # VM Range (VPN or local network access required)
 ![alt text](https://git.cybbh.space/os/public/-/raw/master/images/Range_Diagram3.PNG)
 
-| Name | IP | User/Password | OS | GUI Y/N | Networking Y/N |
+| Name | IP | User/Password | OS | GUI | Networking |
 | - | - | - | - | - | - |
-| Domain Controller | 10.X.0.1 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | N | ??? |
+| Domain Controller | 10.X.0.1 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | Limited* | ??? |
 | File-Server | 10.X.0.3 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | N | ??? |
 | Workstation2 | 10.X.0.4 | andy.dwyer : BurtMacklinFBI | Windows 10 Enterprise | ??? | ??? |
 | Workstation1 | 10.X.0.5 | student : password | Windows 10 Enterprise | ??? | ??? |
