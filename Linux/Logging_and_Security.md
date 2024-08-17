@@ -23,12 +23,6 @@
 
 # Syslog Formatting
 
-### Entry Formatting
-`facility`. `severity` `/path/to/log/location`
-
-
-`facility`. `severity` `@@X.X.X.X:Port` (see syntax for difference between `@` and `@@`)
-
 ### Syslog Codes
 | Code | [Facility](https://en.wikipedia.org/wiki/Syslog#Facility) | [Severity](https://en.wikipedia.org/wiki/Syslog#Severity_level) |
 | ---- | -------- | -------- |
@@ -49,6 +43,14 @@
 | 14 	| console 	| |
 | 15 	| solaris-cron 	| |
 | 16–23 	| local0 – local7 	| |
+
+### Entry Formatting
+`facility`. `severity` `/path/to/log/location`
+
+
+`facility`. `severity` `@@X.X.X.X:Port` (see syntax for difference between `@` and `@@`)
+
+
 ### [Syntax](https://man7.org/linux/man-pages/man5/rsyslog.conf.5.html)
 - Severity
   - `=` means only this severity
