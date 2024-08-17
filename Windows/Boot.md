@@ -13,19 +13,18 @@
    - [NTDLR](Additional_Information/NTDLR.md)
    - [Winresume](Additional_Information/winresume.md) 
  
- After either the [BIOS|UEFI] initialize, they locate winload[.exe|.efi]
- When their winload variant is initialized (Phase 2. Begins)
+ After either the [BIOS|UEFI] initialize winload[.exe|.efi] (Phase 2. Begins)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Phase 2. (firmware finds the bootloader)
+# Phase 2. (winload is initialized)
 - ( BIOS -> MBR -> winload.exe) [MBR](Additional_Information/MBR.md)
 - (UEFI -> UEFI -> winload.exe) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
 ### Tools:
- - bcedit: [BCDEdit](Additional_Information/BDCEdit.md)
- - Msinfo32.exe: [Msinfo32](Additional_Information/Msinfo32.md)
-When the [BIOS|UEFI] find the bootloader they start .
-This starts (Phase 3. Begins)
+[BCDEdit](Additional_Information/BDCEdit.md)
+[Msinfo32](Additional_Information/Msinfo32.md)
+When winload is initialized it reads the BCD [BCDEdit](Additional_Information/BDCEdit.md).
+Finds the kernel and starts it. (Phase 3. Begins)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Phase 3. (winload.exe starts the OS[ntoskernel.exe])
+# Phase 3. (winload.exe starts the OS[ntoskernel.exe])
 - [winload](Additional_Information/winload.md)
 - [ntoskernel.exe](Additional_Information/ntoskernel.md)
  
