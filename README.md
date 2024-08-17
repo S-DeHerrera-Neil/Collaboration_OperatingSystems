@@ -40,8 +40,8 @@
 - [VTA_Range](https://vta.cybbh.space/)
 - [CTF (VPN or local network access required)](http://10.50.22.197:8000)
 > [!TIP]
-> The VM range can be accessed wihout the VPN by opening one of the instances on the VTA Range
+> The VM range can be accessed wihout the VPN by opening one of the instances on the VTA Range and going to console. From there you can simply ssh or rdp to the admin station
 >
-> These devices are accessible without a VPN and can be used to ssh or RDP to the admin station
+> There will be significant latency
 
 - [Persistance](Persistance.md)
