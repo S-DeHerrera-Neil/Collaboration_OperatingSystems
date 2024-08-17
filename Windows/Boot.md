@@ -12,7 +12,7 @@ Part 1. (Device Powers on -> firmware interfaces initializes {BIOS/UEFI})
    - UEFI: [UEFI](Additional_Information/UEFI.md)
 After the BIOS or the UEFI have found their respective boot loaders they hand over their control of the boot process (End of Part 1)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Part 2. 
+Part 2. (Firmware -> )
 - ( BIOS -> MBR ) [MBR](Additional_Information/MBR.md)
 - (UEFI -> UEFI Boot Managers) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
 
@@ -22,7 +22,9 @@ Part 2.
  
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+Part 3. 
+- ()
+- ()
 winload: [winload](Additional_Information/winload.md) 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 ## COMMANDS: 
