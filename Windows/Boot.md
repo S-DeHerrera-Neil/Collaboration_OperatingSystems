@@ -2,30 +2,29 @@
 ![Windows Boot Full](http://1.bp.blogspot.com/-MaRtDTHH1Vo/UysJF8KXNbI/AAAAAAAAALo/D6Kt2f8Gpmo/s1600/Walkthrough_Diagram.jpg)
 
 # Major steps:
- - Hardware Initialization(Part 1)
- - Loading the Boot Sector or Boot Manager(Part 2)
- - Loading the Operating System from the Boot Sector(Part 3)
-
-Part 1. (Device Powers on -> firmware interfaces initializes {BIOS/UEFI})
+ - Part 1.(Hardware Initialization)
+ - Part 2.(Loading the Boot Sector[BIOS]or Boot Managers[UEFI])
+ - Part 3.(Loading the Operating System from the Boot Sector)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Part 1. (firmware interfaces initializes {BIOS|UEFI})
    
    - BIOS: [BIOS](Additional_Information/BIOS.md)
    - UEFI: [UEFI](Additional_Information/UEFI.md)
 After the BIOS or the UEFI have found their respective boot loaders they hand over their control of the boot process (End of Part 1)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Part 2. (Firmware -> )
-- ( BIOS -> MBR ) [MBR](Additional_Information/MBR.md)
-- (UEFI -> UEFI Boot Managers) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
+- ( BIOS -> MBR -> winload.exe) [MBR](Additional_Information/MBR.md)
+- (UEFI -> UEFI -> winload.exe) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
 
 ### Tools:
- bcedit: [BCDEdit](Additional_Information/BDCEdit.md)
- Msinfo32.exe: [Msinfo32](Additional_Information/Msinfo32.md)
+ - bcedit: [BCDEdit](Additional_Information/BDCEdit.md)
+ - Msinfo32.exe: [Msinfo32](Additional_Information/Msinfo32.md)
  
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Part 3. 
-- ()
-- ()
-winload: [winload](Additional_Information/winload.md) 
+Part 3. (winload.exe starting the OS[ntoskernel.exe])
+- winload: [winload](Additional_Information/winload.md)
+- ntoskernel: [ntoskernel.exe](Additional_Information/ntoskernel.md)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 ## COMMANDS: 
 - shows whether your machine is running BIOS or UEFI
