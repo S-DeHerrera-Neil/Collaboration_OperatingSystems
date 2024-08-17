@@ -4,7 +4,9 @@
 | Name | IP | User/Password | OS | GUI Y/N | Networking Y/N |
 | - | - | - | - | - | - |
 | Domain Controller | 10.X.0.1 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | N | ??? |
-| File-Server | 10.X.0.3 | 
+| File-Server | 10.X.0.3 | andy.dwyer : BurtMacklinFBI | Windows Server 2019 | N | ??? |
+| Workstation2 | 10.X.0.4 | andy.dwyer : BurtMacklinFBI | Windows 10 Enterprise | ??? | ??? |
+|
 
 - Domain Controller (10.X.0.1) - Windows Server 2019 Datacenter
 - 
