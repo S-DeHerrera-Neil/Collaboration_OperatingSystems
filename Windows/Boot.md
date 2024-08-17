@@ -7,7 +7,7 @@
  - Loading the Operating System from the Boot Sector(Part 3)
 
 Part 1 
-- (Device Powers on -> firmware interfaces initialize {BIOS/UEFI})
+- (Device Powers on -> firmware interfaces initializes {BIOS/UEFI})
    
    - BIOS: [BIOS](Additional_Information/BIOS.md)
    - UEFI: [UEFI](Additional_Information/UEFI.md)
