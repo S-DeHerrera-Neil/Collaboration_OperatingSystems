@@ -33,3 +33,12 @@ scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/
   - `cd Z:\`
 
 Note: this will not work if you are not in the Z drive or if the machine does not have access to the internet.
+
+# Command Syntax
+
+### Strings
+grabs all valid ascii characters from a file and writes them to the console
+
+```
+Strings <infile> --accept-eula
+```
