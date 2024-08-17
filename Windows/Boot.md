@@ -6,16 +6,16 @@
  - Phase 2.(Loading the Boot Sector[BIOS]or Boot Managers[UEFI])
  - Phase 3.(Loading the Operating System from the Boot Sector)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Phase 1. (firmware interfaces initializes {BIOS|UEFI})
+#### Phase 1. (firmware interfaces initialize: BIOS or UEFI)
    - [BIOS](Additional_Information/BIOS.md)
    - [UEFI](Additional_Information/UEFI.md)
    - [bootmgr](Additional_Information/bootmgr.md) 
    - [NTDLR](Additional_Information/NTDLR.md)
    - [Winresume](Additional_Information/winresume.md) 
  
- After either the [BIOS|UEFI] initialize winload[.exe|.efi] (Phase 2. Begins)
+ After either BIOS(.exe) or UEFI(.efi) initialize winload[.exe|.efi] (Phase 2. Begins)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Phase 2. (winload is initialized)
+#### Phase 2. (winload is initialized)
 - ( BIOS -> MBR -> winload.exe) [MBR](Additional_Information/MBR.md)
 - (UEFI -> UEFI -> winload.exe) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
 ### Tools:
@@ -24,7 +24,7 @@
 When winload is initialized it reads the BCD [BCDEdit](Additional_Information/BDCEdit.md).
 Finds the kernel and starts it. (Phase 3. Begins)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Phase 3. (winload.exe starts the OS[ntoskernel.exe])
+#### Phase 3. (winload.exe starts the OS[ntoskernel.exe])
 - [winload](Additional_Information/winload.md)
 - [ntoskernel.exe](Additional_Information/ntoskernel.md)
  
@@ -42,6 +42,6 @@ Finds the kernel and starts it. (Phase 3. Begins)
 
 - searches the output of BCDEdit for any lines that contain the text winload, regardless of case.
 
-      > bcedit | findstr /i winload
+      PS  > bcedit | findstr /i winload
 
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
