@@ -1,8 +1,7 @@
 # VM Range (VPN or local network access required)
 ![alt text](https://git.cybbh.space/os/public/-/raw/master/images/Range_Diagram3.PNG)
 
-> [!NOTE]
-> This is my very first note
+
 
 | Name | IP | User/Password | OS | GUI | Networking |
 | - | - | - | - | - | - |
@@ -13,6 +12,10 @@
 | Workstation1 | 10.X.0.5 | student : password | Windows 10 Enterprise | Full | Y |
 | Terra | 10.X.0.6 | garviel : luna | Linux Ubuntu | None | Y |
 | Minas-Tirith | 10.X.0.7 | bombadil : jolly | Linux Debian | None | Y |
+
+> [!NOTE]
+> Limited GUI refers to devices that do not have explorer.exe running
+> Open taskmgr.exe by pressing `ctrl` + `shift` + `esc` then run
 
 ## Windows 
   - [File_Search](Windows/File_Search.md)
