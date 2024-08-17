@@ -49,11 +49,4 @@ Phase 3. (winload.exe starts the OS[ntoskernel.exe])
  - Loading the Operating System Kernel
  - Initializing the Kernel
  - Starting Subsystems
- - Starting Session 0
- - Starting Session 1
-
-# Starting Subsystems
-![alt text](https://git.cybbh.space/os/public/-/raw/master/os/modules/006_windows_boot_process/pages/winboot1.png)
-
- 
 
