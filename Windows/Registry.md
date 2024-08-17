@@ -1,12 +1,12 @@
 # Commands
 
-### reg query
+## reg query
 Allows full access to the registry
 ```
 reg query '<registy_path>`
 ```
 
-### get-childitem
+## get-childitem
 Allows the use of wildcards to specify multiple paths. Limited when trying to access restricted registries such as HKLM\Security
 ```
 get-childitem -force 'registry::<registry_path>' 2>$null
