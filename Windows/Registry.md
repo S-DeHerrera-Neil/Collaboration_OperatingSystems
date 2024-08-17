@@ -1,7 +1,18 @@
+# Commands
+
+### reg query (best overall, but cannot use wildcards)
+```
+reg query '<registy_path>`
+```
+
+### get-childitem (can use wildcards but can run into permission issues)
+```
+get-childitem -force 'registry::<registry_path>' 2>$null
+```
+
 ## Persistence
 ```
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
-reg query 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run'
 ```
 ```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
