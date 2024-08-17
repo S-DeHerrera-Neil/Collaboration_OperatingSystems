@@ -12,6 +12,12 @@ Allows the use of wildcards to specify multiple paths. Limited when trying to ac
 get-childitem -force 'registry::<registry_path>' 2>$null
 ```
 
+example:
+```
+get-childitem -force 'registry::HKU\*\Software\Microsoft\Windows\CurrentVersion\Run
+```
+grabs all users startup programs
+
 ## Persistence
 ```
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
@@ -30,10 +36,11 @@ Note: run `services.msc` to view running services and search for malicious servi
 User Startup folder:
 ```
 %AppData%\Microsoft\Windows\Start Menu\Programs\StartUp
+C:\User\<User>\AppData\Microsoft\Windows\Start Menu\Programs\StartUp
 ```
 Shared Startup folder: 
 ```
-ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup
+%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup
 ```
 
 ## Microsoft Edge URL History
