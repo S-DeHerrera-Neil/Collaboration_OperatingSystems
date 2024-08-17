@@ -7,4 +7,4 @@ Windows Boot Manager (BOOTMGR) is a critical component in the Windows boot proce
 - Loading winload.exe: After reading the BCD, BOOTMGR loads winload.exe, which then initializes the Windows kernel and essential drivers.
 
 
-    - Replaces NTLDR: BOOTMGR replaced the older NTLDR (NT Loader) used in previous versions of Windows
+    - Replaces NTLDR: BOOTMGR replaced the older NTLDR - [NTDLR](Additional_Information/NTDLR.md) used in previous versions of Windows
