@@ -40,5 +40,5 @@ Note: this will not work if you are not in the Z drive or if the machine does no
 grabs all valid ascii characters from a file and writes them to the console
 
 ```
-Strings <infile> --accept-eula
+Strings <infile> -accepteula
 ```
