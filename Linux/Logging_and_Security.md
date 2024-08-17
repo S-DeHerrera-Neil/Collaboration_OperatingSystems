@@ -45,10 +45,10 @@
 | 16–23 	| local0 – local7 	| |
 
 ### Entry Formatting
-`facility. severity /path/to/log/location`
+`facility.severity /path/to/log/location`
 
 
-`facility. severity @@X.X.X.X:Port` (see syntax for difference between `@` and `@@`)
+`facility.severity @@X.X.X.X:Port` (see syntax for difference between `@` and `@@`)
 
 
 ### [Syntax](https://man7.org/linux/man-pages/man5/rsyslog.conf.5.html)
