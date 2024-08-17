@@ -68,7 +68,7 @@ Stores:
 C:\Users\<SID>\AppData\Roaming\Microsoft\Windows\Recent
 ```
 
-GET ALL UNIQUE LINES
+Get All Unique lines in Jump List
 ```
 Get-ChildItem 'C:\Users\*\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\*' | foreach-object {strings $_.fullname} | Sort-Object | Get-Unique
 ```
