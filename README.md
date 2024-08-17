@@ -14,7 +14,7 @@
 | Minas-Tirith | 10.X.0.7 | bombadil : jolly | Linux Debian | None | Y |
 
 > [!NOTE]
-> Limited GUI refers to devices that do not have explorer.exe running
+> Limited GUI refers to devices that do not have explorer.exe (windows GUI)
 > 
 > To use these machines, start taskmgr.exe by hitting `ctrl` + `shift` + `esc` then in task manager hit "file" and "run new task" then enter "cmd.exe" to get a command line
 
