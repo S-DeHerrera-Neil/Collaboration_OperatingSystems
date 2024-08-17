@@ -16,32 +16,18 @@ Part 2
 - ( BIOS -> MBR ) [MBR](Additional_Information/MBR.md)
 - (UEFI -> UEFI Boot Managers) [UEFI_BootManagers](Additional_Information/UEFI_BootManagers.md)
 
-# Important Hardware that is part of the Hardware Initialization Phase (Part 1)
-                                                             
-                              BIOS vs UEFI                                                         
- - BIOS (supports up to 2 Terabytes)
-   - MBR (Master Boot Record): contains Disk Partitions
-        ### The MBR is 512 bytes, separated into 6 parts:
-         - Bootstrap Code (446 bytes)
-         - Partition entry 1 (16 bytes)
-         - Partition entry 2 (16 bytes)
-         - Partition entry 3 (16 bytes)
-         - Partition entry 4 (16 bytes)
-         - Boot Signature (2 bytes)
-               - The Partition code that starts the first stage of loading an Operating System is referred to as the "Boot Loader"    
-
- - UEFI (supports up to 9 Zettabytes)
-   - UEFI Boot Manager: Unlike the BIOS (that reads the MBR), the UEFI reads an EFI Partition.
-        - The EFI Partition contains UEFI Boot Managers [Windows bootmgfw.efi or Windows Boot Manager]
-
-  ### - After the BIOS or the UEFI have found their respective boot loaders they hand over their control of the boot process (End of Part 1)
+   ### - After the BIOS or the UEFI have found their respective boot loaders they hand over their control of the boot process (End of Part 1)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## COMMAND(s): showing whether your machine is running BIOS or UEFI
    PS > findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
    
    PS > Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot environment"
 
-### bcedit (BDCEdit.exe): a Command Line tool used to create new stores, modifying existing stores, and add boot menu options.
+### Tools:
+ bcedit: [BCDEdit](Windows/Additional_Information/BDCEdit.md)
+ Msinfo32.exe: [Msinfo32](Windows/Additional_Information/Msinfo32.md)
+ 
+ (BDCEdit.exe): a Command Line tool used to create new stores, modifying existing stores, and add boot menu options.
     - BCD (Boot Configuration Files) provides a store that's used to describe boot applications and boot application settings
     - winload refers to the Windows Boot Loader executable (winload.exe), which is responsible for loading the operating system kernel and other critical  
      components during the boot process. This command can be useful for finding information related to the boot loader configuration, such as its path or 
