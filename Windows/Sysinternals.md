@@ -6,8 +6,15 @@
   - `Invoke-WebRequest "https://download.sysinternals.com/files/SysinternalsSuite.zip"` (Powershell)
   - Or enter the url `https://download.sysinternals.com/files/SysinternalsSuite.zip` into a web browser and the file will be downloaded automatically
 - Step 1.5: Moving zipfile to another machine (if neccessary)
-  - Moving the zipfile to another machine: `scp SysinternalsSuite.zip 10.X.X.X:/Users/<user>/AppData/Local/Microsoft/WindowsApps`
-  - Grabbing the zipfile from another machine: `scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/Local/Microsoft/WindowsApps`
+  - Moving the zipfile to another machine:
+  ```
+scp SysinternalsSuite.zip 10.X.X.X:/Users/<user>/AppData/Local/Microsoft/WindowsApps
+```
+  - Grabbing the zipfile from another machine:
+```
+```
+scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/Local/Microsoft/WindowsApps
+```
   - Upload via MobaXTerm (open a ssh session to the target machine and use the green up arrow in the file manager window on the left to upload a file)
 - Step 2: File Placement
   - Ideally the file should be placed in `C:\Users\<user>\AppData\Local\Microsoft\WindowsApps` (this allows you to run these programs without being in this directory)
