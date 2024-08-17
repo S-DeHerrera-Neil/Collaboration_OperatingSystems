@@ -1,6 +1,8 @@
 # VM Range (VPN or local network access required)
 ![alt text](https://git.cybbh.space/os/public/-/raw/master/images/Range_Diagram3.PNG)
 
+- Domain Controller (10.X.0.1) - Windows Server 2019 Datacenter
+- 
 ## Windows 
   - [File_Search](Windows/File_Search.md)
   - [Registry](Windows/Registry.md)
