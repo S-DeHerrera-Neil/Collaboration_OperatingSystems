@@ -1,67 +1,44 @@
-Sure, let's simplify this!
+# Downloading Sysinternals
 
-### 1. Sysinternals Introduction
-**Sysinternals** is a set of advanced tools for managing, troubleshooting, and diagnosing Windows systems. You can access these tools directly from [Sysinternals Live](https://live.sysinternals.com/).
+## Recommended Method (download and unzip)
 
-#### How to Download Sysinternals Tools:
-1. **Map Network Drive:**
-   ```powershell
-   net use * http://live.sysinternals.com
-   ```
-   This command connects your computer to the Sysinternals website as a network drive.
+- Step 1: downloading sysinternals.zip
+  - `Invoke-WebRequest "https://download.sysinternals.com/files/SysinternalsSuite.zip"` (Powershell)
+  - Or enter the url `https://download.sysinternals.com/files/SysinternalsSuite.zip` into a web browser and the file will be downloaded automatically
+- Step 1.5: Moving zipfile to another machine (if neccessary)
+  - Moving the zipfile to another machine:
+```
+scp <file_to_send> <remote_ip>:<where_to_send_file>
+scp SysinternalsSuite.zip 10.X.X.X:/Users/<user>/AppData/Local/Microsoft/WindowsApps
+```
+  - Grabbing the zipfile from another machine:
+```
+scp <remote_ip>:<path_to_file> <where_to_send_file>
+scp 10.X.X.X:/Home/<user>/Downloads/SysinternalsSuite.zip /Users/<user>/AppData/Local/Microsoft/WindowsApps
+```
+  - Upload via MobaXTerm (open a ssh session to the target machine and use the green up arrow in the file manager window on the left to upload a file)
+- Step 2: File Placement
+  - Ideally the file should be placed in `C:\Users\<user>\AppData\Local\Microsoft\WindowsApps` (this allows you to run these programs without being in this directory)
+  - This can be done by running:
+    `move SysinternalsSuite.zip "C:\Users\<user>\AppData\Local\Microsoft\WindowsApps"` (CMD and Powershell)
+- Step 2: unpacking zipfile
+  - `Expand-Archive SysinternalsSuite.zip .` (Powershell)
+  - Or extract all via the file explorer gui
 
-2. **Create a PowerShell Drive:**
-   ```powershell
-   New-PSDrive -Name "SysInt" -PSProvider FileSystem -Root "\\live.sysinternals.com\Tools"
-   ```
-   This command creates a temporary or persistent connection to the Sysinternals tools.
+## Alternative Method (share drive)
 
-3. **Download and Extract Tools:**
-   ```powershell
-   $wc = new-object System.Net.WebClient
-   $wc.DownloadFile("https://download.sysinternals.com/files/SysinternalsSuite.zip", "$pwd\SysinternalsSuite.zip")
-   Expand-Archive SysinternalsSuite.zip
-   ```
-   These commands download the Sysinternals Suite and extract it to your current directory.
+- Step 1: Link sysinternals tool to drive
+  - `net use * http://live.sysinternals.com` (cmd or powershell)
+- Step 2: change directory to Z drive to access and run programs
+  - `cd Z:\`
 
-### 2. Procmon (Process Monitor)
-**Process Monitor** is a tool that shows real-time file system, registry, and process/thread activity.
+Note: this will not work if you are not in the Z drive or if the machine does not have access to the internet.
 
-#### Key Features:
-- **Registry:** Monitors key creation, reading, deletion, etc.
-- **File System:** Tracks file creation, writing, deletion, etc.
-- **Network:** Shows source and destination TCP/UDP traffic.
-- **Process:** Monitors process and thread activities.
+# Command Syntax
 
-#### Tabs and Options:
-- **File:** Save/export logs, import/export configurations.
-- **Edit:** Copy, find, auto-scroll, clear display.
-- **Event:** View properties, stack, filter, highlight options.
-- **Filter:** Advanced search options, save/load filters.
-- **Tools:** Summary outputs, system details, process tree.
-- **Options:** GUI configuration, boot logging, network addresses.
-- **Help:** Manual, command line options.
+### Strings
+grabs all valid ascii characters from a file and writes them to the console
 
-#### Default Columns:
-- **Time:** Event occurrence time.
-- **Process Name:** Name of the process generating the event.
-- **PID:** Process ID.
-- **Operation:** Name of the operation being logged.
-- **Path:** Path of the affected event.
-- **Result:** Operation result (e.g., SUCCESS, ACCESS DENIED).
-- **Detail:** Additional troubleshooting information.
-
-#### Demo: Using Procmon to Monitor Windows Boot Process
-1. **Setup:**
-   - Open `REGEDIT` and create a new string value called `RunME` with `c:\windows\notepad.exe`.
-   - Open `Procmon.exe`, accept the EULA, and enable boot logging.
-   - Restart the system.
-
-2. **After Restart:**
-   - Open `Procmon.exe` and save the log file.
-   - Load the `.pml` file and analyze the process tree.
-
-3. **Filtering:**
-   - Right-click on `notepad.exe` and use filtering options to include/exclude specific processes.
-
-This should give you a good overview of Sysinternals and Process Monitor! If you have any specific questions or need further clarification, feel free to ask! 😊
+```
+Strings <infile> -accepteula
+```
