@@ -12,3 +12,9 @@ A worse version of htop, may work on less advanced systems
 # Identifying Orphans
 
 Orphan life-cycle
+1. Start with a parent with a high PPID
+2. Parent process dies
+3. Process becomes batman
+4. Process gets PPID of 1 (init)
+
+Note: If you are using the tree view the process will fall under `/home/orphan`
