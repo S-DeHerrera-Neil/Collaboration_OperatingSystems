@@ -49,4 +49,3 @@
 >
 > from here you can use SSH or RDP to the admin station
 
-Insert Text "Hello World!"
