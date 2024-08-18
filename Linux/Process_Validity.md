@@ -44,3 +44,8 @@ Older service management system that uses the `service` command
 service <service> <action>
 ```
 Actions: `status`, `start`, `stop`, `restart`
+
+# File Handles and Descriptors
+
+### lsof
+
