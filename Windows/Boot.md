@@ -12,7 +12,7 @@
    - [bootmgr](Additional_Information/bootmgr.md) 
    - [Winresume](Additional_Information/winresume.md) 
  
- After either BIOS(.exe) or UEFI(.efi) initialize winload[.exe|.efi] (Phase 2. Begins)
+ #### After either BIOS(.exe) or UEFI(.efi) initialize winload[.exe|.efi] (Phase 2. Begins)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Phase 2. (winload is initialized)
 - ( BIOS -> MBR -> winload.exe) [MBR](Additional_Information/MBR.md)
@@ -20,7 +20,7 @@
 ### Tools:
 [BCDEdit](Additional_Information/BDCEdit.md)
 [Msinfo32](Additional_Information/Msinfo32.md)
-When winload is initialized it reads the BCD [BCDEdit](Additional_Information/BDCEdit.md).
+#### When winload is initialized it reads the BCD [BCDEdit](Additional_Information/BDCEdit.md).
 Finds the kernel and starts it. (Phase 3. Begins)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Phase 3. (winload.exe starts the OS[ntoskernel.exe])
@@ -28,7 +28,7 @@ Finds the kernel and starts it. (Phase 3. Begins)
 - [ntoskernel.exe](Additional_Information/ntoskernel.md)
  
  ### ntoskrnl.exe -> LogonUI.exe (End of Part 3)
-(End of Phase 3 Start of [SubSystems](Additional_Information/SubSystems.md))
+#### (End of Phase 3 Start of [SubSystems](Additional_Information/SubSystems.md))
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 ## COMMANDS: 
 - shows whether your machine is running BIOS or UEFI
@@ -87,13 +87,13 @@ Finds the kernel and starts it. (Phase 3. Begins)
       bcdedit /set {bootmgr} timeout 29 (2)
  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- ## Locations of Interest
+ ### Locations of Interest
 - /dev/sda1
 - DISK 1 C:\
 - \Boot\BCD
 - C:\pagefile.sys
 
-## DLLs of Interest
+### DLLs of Interest
  
       - hal.dll
 
