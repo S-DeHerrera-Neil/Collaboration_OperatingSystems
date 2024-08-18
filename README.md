@@ -48,3 +48,5 @@
 > go to the [VTA Range](https://vta.cybbh.space/) > instances > select one of the machines > console
 >
 > from here you can use SSH or RDP to the admin station
+
+Insert Text "Hello World!"
