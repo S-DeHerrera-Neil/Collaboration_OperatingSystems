@@ -17,6 +17,7 @@
     - Smss.exe(1) starts Csrss.exe & Winlogon.exe
     - Csrss.exe...
         - Winlogon.exe Starts LogonUI.exe & UserInint.exe
+            - LogonUI.exe...
             - Userinit.exe starts Explorer.exe
                 - Explorer.exe is the GUI that the Authenticated User interacts with. 
 
