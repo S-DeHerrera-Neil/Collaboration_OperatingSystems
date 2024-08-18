@@ -18,3 +18,29 @@ Orphan life-cycle
 4. Process gets PPID of 1 (init)
 
 Note: If you are using the tree view the process will fall under `/home/orphan`
+
+# Search for a process manually
+```
+ps -elf | grep "searchname"
+```
+
+# Systemd
+
+Common with more modern operating systems and uses `systemctl` for service management
+
+
+### Syntax
+```
+systemctl <action> <service>
+```
+Actions: `list-units [-all]`, `start`, `stop`
+
+# SysV
+
+Older service management system that uses the `service` command
+
+### Syntax
+```
+service <service> <action>
+```
+Actions: `status`, `start`, `stop`, `restart`
