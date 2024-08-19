@@ -60,6 +60,12 @@ get-aduser -filter * -property EmailAddress | select EmailAddress | Where-Object
 ```
 Grabs all user's emails and filters out any that end with the domain "mail.mil"
 
+```
+get-aduser -filter 'name -like "Isiah"' -properties *
+```
+gets all properties for a user with a name similar to "Isiah"
+
+
 # Edit Active Directory users and groups
 
 ## Enable-ADAccount
