@@ -54,6 +54,12 @@ get all users
 search-adaccount -accountdisabled
 ```
 An alternative method to finding disabled accounts
+
+```
+get-aduser -filter * -property EmailAddress | select EmailAddress | Sort-Object | Where-Object {$_ -notmatch "mail.mil"}
+```
+Grabs all user's emails and filters out any that end with the domain "mail.mil"
+
 # Edit Active Directory users and groups
 
 ## Enable-ADAccount
