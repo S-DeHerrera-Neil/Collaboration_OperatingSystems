@@ -9,7 +9,7 @@
 ## Reading a SID
 ![Windows Diagram](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/media/security-identifier-architecture.png)
 
-### Example RID S-1-5-21-1004336348-1177238915-682003330-1000
+### S-1-5-21-1004336348-1177238915-682003330-1000
 
 | S | 1 | 5 | 21-1004336348-1177238915-682003330 | 1000 |
 | - | - | - | - | - |
