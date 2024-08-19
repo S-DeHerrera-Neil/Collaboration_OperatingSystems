@@ -14,6 +14,8 @@
 | S | 1 | 5 | 21-1004336348-1177238915-682003330 | 1000 |
 | - | - | - | - | - |
 | SID Identifier | Revision # | Authority Value | Sub-Authority Value (Domain Portion) | Relative Identifier (RID) |
+
+
 ```
 Get-Command -Module activedirectory
 ```
