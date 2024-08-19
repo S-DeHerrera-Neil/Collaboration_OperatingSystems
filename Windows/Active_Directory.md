@@ -50,6 +50,10 @@ get-aduser -filter *
 ```
 get all users
 
+```
+search-adaccount -accountdisabled
+```
+An alternative method to finding disabled accounts
 # Edit Active Directory users and groups
 
 ## Enable-ADAccount
