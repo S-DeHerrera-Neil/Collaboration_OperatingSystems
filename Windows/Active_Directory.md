@@ -1,13 +1,15 @@
 # Forests, Trees, Domains
 ![forest-tree-domain](https://git.cybbh.space/os/public/-/raw/master/os/modules/014_windows_active_directory_enumeration/pages/ADimage1.png)
-- Domains
-  - Active Directory objects (users or devices) that all use the same database or are typically in the same location.
-- Trees
-  - Several Domains grouped together. Typically, has a primary domain controller for the entire tree.
-- Forests
-  - Forests are groups of trees connected together via trust relationships.
+- *Domains*: Active Directory objects (users or devices) that all use the same database or are typically in the same location.
+- *Trees*: Several Domains grouped together. Typically, has a primary domain controller for the entire tree.
+- *Forests*: groups of trees connected together via trust relationships.
 
-# Active Directory Enumeration
+#Active Directory Enumeration
+
+## Reading a SID
+![Windows Diagram](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/media/security-identifier-architecture.png)
+S-R-X-Y1-Y2-Yn-1-Yn
+
 
 ```
 Get-Command -Module activedirectory
