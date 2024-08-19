@@ -45,6 +45,11 @@ finds all disabled users
 
 Note: `Enable-ADAccount -Identity <user>` can be used to enable any disabled accounts
 
+```
+get-aduser -filter *
+```
+get all users
+
 # Edit Active Directory users and groups
 
 ## Enable-ADAccount
