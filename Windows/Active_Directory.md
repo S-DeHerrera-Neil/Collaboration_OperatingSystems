@@ -9,8 +9,11 @@
 ## Reading a SID
 ![Windows Diagram](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/media/security-identifier-architecture.png)
 S-R-X-Y1-Y2-Yn-1-Yn
+S-1-5-21-1004336348-1177238915-682003330-1000
 
-
+| S | 1 | 5 | 21-1004336348-1177238915-682003330 | 1000 |
+| - | - | - | - | - |
+| SID Identifier | Revision # | Authority Value | Sub-Authority Value (Domain Portion) | Relative Identifier (RID) |
 ```
 Get-Command -Module activedirectory
 ```
