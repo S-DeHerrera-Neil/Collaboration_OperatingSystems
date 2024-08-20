@@ -53,3 +53,13 @@ sudo lsof -c <process>
 ```
 List all open files for a specific process
 
+### Format
+| COMMAND | PID | USER | FD | TYPE | DEVICE | SIZE/OFF | NODE | NAME |
+| :------ | ----- | -------- | --- | ---- | -------- | ------------ | --------| ----------------------|
+| sshd | 1963 | student | 0u | CHR | 1,3 | 0t0 | 1028 | /dev/null |
+| sshd | 1963 | student | 1u | CHR | 1,3 | 0t0 | 1028 | /dev/null |
+| sshd | 1963 | student | 2u | CHR | 1,3 | 0t0 | 1028 | /dev/null |
+| sshd | 1963 | student | 3u | IPv4 | 12124 | 0t0 | TCP | *:ssh (LISTEN) |
+| sshd | 1963 | student | 4u | IPv6 | 12126 | 0t0 | TCP | *:ssh (LISTEN) |
+
+FD:File descriptor, shows permissions. u = read & write, r = read, and w = write.
