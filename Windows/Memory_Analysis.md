@@ -65,3 +65,8 @@ Note: this returns a executable that can be hashed and checked against other too
 volatility -f .\0zapftis.vmem --profile=WinXPSP2x86 connscan
 ```
 returns all network connections
+
+```
+.\volatility_2.6_win64_standalone.exe -f <file> --profile=<profile> driverscan
+```
+returns driver information
