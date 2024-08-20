@@ -48,4 +48,8 @@ Actions: `status`, `start`, `stop`, `restart`
 # File Handles and Descriptors
 
 ### lsof
+```
+sudo lsof -c <process>
+```
+List all open files for a specific process
 
