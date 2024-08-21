@@ -66,13 +66,13 @@ Finds the kernel and starts it. (Phase 3. Begins)
 - Create New partition
 
       c:\demo>bcdedit /create {ntldr} /d "Windows XP Pro SP2 - Tiger Paw"
-- -Specify the Partition
+- Specify the Partition
 
       c:\demo>bcdedit /set {ntldr} device partition=C:
-- -Specify the Path to ntldr
+- Specify the Path to ntldr
 
       c:\demo>bcdedit /set {ntldr} path \ntldr
-- -Specify the Display Order
+- Specify the Display Order
 
       c:\demo>bcdedit /displayorder {ntldr} /addfirst
 - Show the added Partition
@@ -93,8 +93,7 @@ Finds the kernel and starts it. (Phase 3. Begins)
 - C:\pagefile.sys
 
 ### DLLs of Interest
- 
-      - hal.dll
+ - hal.dll
 
 
 
