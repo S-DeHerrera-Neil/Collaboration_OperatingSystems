@@ -15,11 +15,11 @@
 | - | - | - | - | - |
 | SID Identifier | Revision # | Authority Value | Sub-Authority Value (Domain Portion) | Relative Identifier (RID) |
 
-
+- lists all powershell commands for active directory machines
 ```
 Get-Command -Module activedirectory
 ```
-lists all powershell commands for active directory machines
+
 
 
 # Enumerate Active Directory users and groups
@@ -43,7 +43,8 @@ get-aduser -filter {Enabled -eq "FALSE"} -properties name, enabled
 ```
 finds all disabled users
 
-[!NOTE]: 
+> [!NOTE] 
+
 ```
 Enable-ADAccount -Identity <user>
 ```
