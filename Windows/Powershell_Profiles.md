@@ -31,4 +31,8 @@ Test-Path -Path $profile.currentusercurrenthost
 This tests whether the profile has been created or not
 
 
-can replace with `currentUserAllHosts`, `AllUsersAllHosts`, or `AllUserscurrentHost`
+can replace with:
+
+- $profile.currentUserAllHost
+- $profile.AllUsersAllHosts
+- $profile.AllUserscurrentHost
