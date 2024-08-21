@@ -44,11 +44,11 @@ get-aduser -filter {Enabled -eq "FALSE"} -properties name, enabled
 finds all disabled users
 
 > [!NOTE] 
-
+> can be used to enable any disabled accounts
 ```
 Enable-ADAccount -Identity <user>
 ```
-can be used to enable any disabled accounts
+
 
 ```
 get-aduser -filter *
