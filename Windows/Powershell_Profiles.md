@@ -32,7 +32,13 @@ This tests whether the profile has been created or not
 
 
 can replace with:
-
-- $profile.currentUserAllHost
-- $profile.AllUsersAllHosts
-- $profile.AllUserscurrentHost
+```
+ $profile.currentUserAllHost
+```
+```
+ $profile.AllUsersAllHosts
+```
+or
+```
+ $profile.AllUserscurrentHost
+ ```
