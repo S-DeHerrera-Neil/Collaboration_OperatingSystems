@@ -1,6 +1,6 @@
 # Powershell Profiles
 
-These save Powershell settings for users and systems and can be used to establish *persistence*
+These save Powershell settings for users and systems and can be used to establish **persistence**
 
 ## Locations
 
