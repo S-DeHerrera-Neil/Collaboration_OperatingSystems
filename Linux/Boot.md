@@ -89,6 +89,6 @@ md5sum linuxsucks
 | init.tab | 
 | runlevels | /etc/rc<#>.d/ | `cat /etc/rc*.d/* \| grep "searchkey"` |
 | etc profile |
-| bash profile |
+| bash profile | `~/.bash_profile` `~/.bashrc` `/etc/profile.d` `/etc/bash.bashrc` |
 | crontab | `/etc/crontab/` `/etc/cron.d/` `/var/spool/cron/` | `cat /etc/crontab` `/etc/cron.d/*` |
 | cron 
