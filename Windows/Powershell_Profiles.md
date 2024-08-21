@@ -1,4 +1,8 @@
-# Powershell Profiles Location
+# Powershell Profiles
+
+These save Powershell settings for users and systems and can be used to establish *persistence*
+
+## Locations
 
 ### All Users, All Hosts
 ```
@@ -18,3 +22,13 @@ $Home\[My]Documents\Profile.ps1
 $Home\[My ]Documents\WindowsPowerShell\Profile.ps1
 $Home\[My]Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1 # For Powershell ISE
 ```
+
+## Enumerations
+
+```
+Test-Path -Path $profile.currentusercurrenthost
+```
+This tests whether the file has been created or not
+
+
+replace with `currentUserAllHosts`, `AllUsersAllHosts`, or `AllUserscurrentHost`
