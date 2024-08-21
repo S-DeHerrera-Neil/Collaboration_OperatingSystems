@@ -4,7 +4,7 @@
 - *Trees*: Several Domains grouped together. Typically, has a primary domain controller for the entire tree.
 - *Forests*: groups of trees connected together via trust relationships.
 
-#Active Directory Enumeration
+# Active Directory Enumeration
 
 ## Reading a SID
 ![Windows Diagram](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/media/security-identifier-architecture.png)
