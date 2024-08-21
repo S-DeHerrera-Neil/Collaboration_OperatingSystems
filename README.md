@@ -27,6 +27,7 @@
   - [Memory Analysis](Windows/Memory_Analysis.md)
   - [Active Directory Enumeration](Windows/Active_Directory.md)
   - [Sysinternals](Windows/Sysinternals.md)
+  - [Powershell Profiles](Windows/Powershell_Profiles.md)
 
 ## Linux
   - [File_Search](Linux/File_Search.md)
