@@ -1,17 +1,27 @@
 # Log locations
 ### Commands to know
-- cmd: `reg query "<key>"`
-- powershell: `Get-ChildItem "<key>"`
-- sysinternals: `strings <searchfile> -accepteula`
-
+- cmd syntax:
+```
+reg query "<key>"
+```
+- powershell syntax: 
+```
+Get-ChildItem "<key>"
+```
+- sysinternals syntax: 
+```
+strings <searchfile> -accepteula
+```
 ## User Assist
 Used for file and shortcut access history
 ```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count\
+
 HKEY_USERS\<SID>\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count\
 ```
 ```
 CEBFF5CD-ACE2-4F4F-9178-9926F41749EA # GUID to search for accessed applications and files
+
 F4E57C4B-2036-45F0-A9AB-443BCFE33D9F # GUID to search for shortcuts used to start programs
 ```
 Note: All UserAssist registry data is encoded with [ROT13](https://rot13.com/) (link to decode)
@@ -30,8 +40,15 @@ Version 1803* (Windows Build 10.0.17134) and below:
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\UserSettings
 ```
 
-*Note: you can get windows version by running `systeminfo` (cmd) or `get-computerinfo | select osname, osversion` (powershell)
-
+*Note: you can get windows version by running 
+(cmd):
+```
+systeminfo
+```
+or (powershell):
+```
+get-computerinfo | select osname, osversion
+```
 Grabs all processes in a BAD FORMAT (there might be a better command but I have no clue
 ```
 Get-ItemProperty "REGISTRY::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\UserSettings\*\"
@@ -52,7 +69,7 @@ Format:
 ## Prefetch
 Files created when a program is first run and persist between restarts (limit of 1024 files on Win10 and 128 on Win7)
 
-Prefetch stores the last 8 execution times
+- Prefetch stores the last 8 execution times
 ```
 C:\Windows\Prefetch
 ```
@@ -74,15 +91,16 @@ Get-ChildItem 'C:\Users\*\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDest
 ```
 
 ## Recent Files
-tracks the last 150 files and folders opened
+1.tracks the last 150 files and folders opened
 
-holds path, entry, and modification time
+2.holds path, entry, and modification time
 ```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+
 HKEY_USERS\<SID>\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 ```
 
-GET ALL RECENT FILES:
+- GET ALL RECENT FILES:
 ```
 Get-Item "REGISTRY::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" | select -Expand property | ForEach-Object {
     [System.Text.Encoding]::Default.GetString((Get-ItemProperty -Path "REGISTRY::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" -Name $_).$_)
@@ -91,7 +109,7 @@ Get-Item "REGISTRY::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explo
 
 ## Browser Artifacts
 
-Chrome (URL history, current session/tabs, top sites):
+- Chrome (URL history, current session/tabs, top sites):
 ```
 C:\Users\<USER>\AppData\Local\Google\Chrome\User Data\Default\history
 ```
@@ -105,14 +123,16 @@ more review needed
 
 ## Viewing Windows Events
 
-Registry
+- Windows Events Registry Key
 ```
 HKEY_LOCAL_MACHINE\SECURITY\Policy\PolAdtEv
 ```
 
 ### Method 1: EventViewer GUI
-run `eventvwr` in cmd to open the application
-
+run in cmd to open the application
+```
+eventvwr
+```
 ### Method 2: Powershell
 log viewer:
 ```
