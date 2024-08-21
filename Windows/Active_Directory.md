@@ -49,26 +49,26 @@ finds all disabled users
 Enable-ADAccount -Identity <user>
 ```
 
-
+- get all users
 ```
 get-aduser -filter *
 ```
-get all users
 
+- An alternative method to finding disabled accounts
 ```
 search-adaccount -accountdisabled
 ```
-An alternative method to finding disabled accounts
 
+- Grabs all user's emails and filters out any that end with the domain "mail.mil"
 ```
 get-aduser -filter * -property EmailAddress | select EmailAddress | Where-Object {$_ -notmatch "mail.mil"}
 ```
-Grabs all user's emails and filters out any that end with the domain "mail.mil"
 
+- gets all properties for a user with a name similar to "Isiah"
 ```
 get-aduser -filter 'name -like "Isiah"' -properties *
 ```
-gets all properties for a user with a name similar to "Isiah"
+
 
 
 # Edit Active Directory users and groups
