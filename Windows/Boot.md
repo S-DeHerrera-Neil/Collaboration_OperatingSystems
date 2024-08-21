@@ -1,5 +1,5 @@
 ###### Me and My Homies don't fuck with Linux
-###### #WindowsGangGang #PowerShellBois #NETorDotsOnYourHead 
+###### #WindowsGangGang #PowerShellBois #.NETorDotsOnYourHead 
 
 # Boot Process Overview
 ![Windows Boot Full](http://1.bp.blogspot.com/-MaRtDTHH1Vo/UysJF8KXNbI/AAAAAAAAALo/D6Kt2f8Gpmo/s1600/Walkthrough_Diagram.jpg)
