@@ -28,7 +28,7 @@ $Home\[My]Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1 # For 
 ```
 Test-Path -Path $profile.currentusercurrenthost
 ```
-This tests whether the file has been created or not
+This tests whether the profile has been created or not
 
 
-replace with `currentUserAllHosts`, `AllUsersAllHosts`, or `AllUserscurrentHost`
+can replace with `currentUserAllHosts`, `AllUsersAllHosts`, or `AllUserscurrentHost`
