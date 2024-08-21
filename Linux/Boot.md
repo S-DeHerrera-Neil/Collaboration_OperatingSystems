@@ -80,3 +80,13 @@ The flag is the entire hash.
 dd bs=1 skip=392 count=4 if=mmbroken of=linuxsucks
 md5sum linuxsucks
 5fa690cb0f0789cbc57decfd096a503e
+
+# Persistance Locations
+
+| name | path | enumeration command |
+| - | - | - |
+| sbin init | ??? | ??? |
+| etc init | /etc/init.d | cat /etc/init.d/* \| grep "searchkey" |
+| init.tab |
+| runlevels |
+| crontab |
