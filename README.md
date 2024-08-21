@@ -40,7 +40,7 @@
 - [cybbh_setup_guide](https://cctc.cybbh.io/students/students/latest/Day_0_Setup.html)
 - [VTA_Range](https://vta.cybbh.space/)
 - [CTF (VPN or local network access required)](http://10.50.22.197:8000)
-- [Persistance](Persistance.md)
+- [Persistance](Legacy_Items/Legacy_OS_Notes.md)
 
 
 > [!TIP]
