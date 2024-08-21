@@ -7,6 +7,7 @@ $PsHome\Profile.ps1
 ### All Users, Current Host
 ```
 $PsHome\Microsoft.PowerShell_profile.ps1
+$PsHome\Microsoft.PowerShellISE_profile.ps1 # For Powershell ISE
 ```
 ### Current Users, All Hosts
 ```
@@ -15,4 +16,5 @@ $Home\[My]Documents\Profile.ps1
 ### Current User, Current Host
 ```
 $Home\[My ]Documents\WindowsPowerShell\Profile.ps1
+$Home\[My]Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1 # For Powershell ISE
 ```
