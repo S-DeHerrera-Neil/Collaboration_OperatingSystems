@@ -87,6 +87,8 @@ md5sum linuxsucks
 | - | - | - |
 | sbin init | ??? | ??? |
 | etc init | /etc/init.d | cat /etc/init.d/* \| grep "searchkey" |
-| init.tab |
-| runlevels |
-| crontab |
+| init.tab | 
+| runlevels | /etc/rc<#>.d/ | 
+| etc profile |
+| bash profile |
+| crontab | /etc/cron.d/ | `cat /etc/cron.d/* \| grep "searchkey"` |
