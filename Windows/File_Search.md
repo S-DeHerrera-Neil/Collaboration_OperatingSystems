@@ -1,3 +1,5 @@
+> ![Note]
+
 ## Find All Files Recursively
 ```
 get-childitem -force -recurse -erroraction SilentlyContinue | Select Mode, LastWriteTime, Fullname
