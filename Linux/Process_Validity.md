@@ -24,6 +24,15 @@ Note: If you are using the tree view the process will fall under `/home/orphan`
 ps -elf | grep "searchname"
 ```
 
+# Check if system is SysV or Systemd
+
+```
+ps -p 1
+```
+grabs the process details for the process with PID 1
+
+if this process is called "init" it is a SysV system, if the process is called "systemd" it is a systemd system
+
 # Systemd
 
 Common with more modern operating systems and uses `systemctl` for service management
