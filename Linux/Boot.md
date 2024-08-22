@@ -88,4 +88,4 @@ md5sum linuxsucks
 | runlevels | `/etc/rc<#>.d/` | `cat /etc/rc*.d/* \| grep "searchkey"` |
 | System Wide profile | `/etc/profile` `/etc/bash.bashrc` |
 | User Specific profile | `~/.bash_profile` `~/.bashrc`  | `cat /home/*/.bash* \| grep "searchkey"`
-| cron | `/etc/crontab/` `/etc/cron.d/` `/var/spool/cron/` | `cat /etc/crontab` `/etc/cron.d/*` |
+| cron | `/etc/crontab/` `/etc/cron.d/` `/var/spool/cron/` | `cat /etc/crontab` `/var/spool/cron` |
