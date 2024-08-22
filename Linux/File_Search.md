@@ -1,3 +1,6 @@
+> [!NOTE]
+> running `sudo -l` allows you to see what permissions work with sudo and can avoid logging sudo violations
+
 ## Find a file by filename 
 ```
 find / -name "*filename*" 2>/dev/null
